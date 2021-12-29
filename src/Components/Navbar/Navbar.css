@@ -11,7 +11,10 @@ nav .left-side {
   /* justify-content: right; */
   align-items: center;
   flex: 50%;
-  font-size: 2em;
+  justify-content: left;
+  margin-left: 5%;
+  display: flex;
+  font-size: 1.7em;
 }
 
 nav .right-side {
@@ -29,7 +32,7 @@ nav .right-side .links a {
   color: white;
   text-decoration: none;
   margin-right: 35px;
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 nav .right-side button {
