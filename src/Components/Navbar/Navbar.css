@@ -1,15 +1,150 @@
 nav {
-    background-color: blue;
-    color: white;
-    height: 50px;
+  background-color: navy;
+  color: white;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav .left-side {
+  /* justify-content: right; */
+  align-items: center;
+  flex: 50%;
+  font-size: 2em;
+}
+
+nav .right-side {
+  justify-content: right;
+  flex: 50%;
+  display: flex;
+}
+
+nav .right-side #hidden {
+  display: flex;
+  
+}
+
+nav .right-side .links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 35px;
+  font-size: 2em;
+}
+
+nav .right-side button {
+  display: none;
+  margin-right: 35px;
+  border: none;
+}
+
+
+.menu{
+    position: relative;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    
+}
+.menu-hamburguer{
+    width: 40px;
+    background: white;
+    border-radius: 5px;
+    height: 3px;
+    transition: all .5s ease-in-out;
+    justify-content: center;
     align-items: center;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
+.menu-hamburguer::before,
+.menu-hamburguer::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    background: white;
+    border-radius: 5px;
+    height: 3px;
+    transition: all .5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.menu-hamburguer::before{
+    transform: translateY(-8px);
     
+    
+}
+
+.menu-hamburguer::after{
+    transform: translateY(8px);
+    
+}
+
+.dropdown{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+   
+   
+
+}
+@media only screen and (max-width: 850px) {
+  nav .right-side .links a {
+    font-size: 1.2em;
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  nav .right-side .links a {
+    font-size: 1em;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  nav .right-side .links {
+    display: none;
+  }
+
+  nav .right-side button {
+    display: flex;
+    transition: 0.4s;
+    background-color: transparent;
+  }
+
+  nav .right-side #hidden {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    height: 230px;
+    width: 100%;
+    transition: 0.4s;
+    background-color: navy;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav .right-side #hidden a {
+    margin: 15px;
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  nav .right-side .links a {
+    font-size: 1em;
+    margin-right: 15px;
+  }
 }
