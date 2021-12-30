@@ -1,10 +1,13 @@
 import "./Navbar.css";
 import { useState } from "react";
 
+
 function Navbar() {
   //state for the navbar
 
   const [showLinks, setShowLinks] = useState(false);
+
+
 
   return (
     <nav>
@@ -16,10 +19,12 @@ function Navbar() {
           <a href="#contacts">Contacts</a>
         </div>
         <button onClick={() => setShowLinks(!showLinks)} className="dropdown">
+        <input type="checkbox" className="toggler"/>
           <div className="menu">
             <div className="menu-hamburguer"></div>
           </div>
         </button>
+        
       </div>
     </nav>
   );

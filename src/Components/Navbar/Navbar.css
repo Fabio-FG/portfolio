@@ -43,6 +43,12 @@ nav .right-side button {
   transition: all 0.5s ease;
 }
 
+nav .right-side #hidden a {
+  margin: 15px;
+  font-size: 1.6em;
+  text-align: center;
+  
+}
 
 .menu{
     position: relative;
@@ -95,10 +101,7 @@ nav .right-side button {
 }
 
 .dropdown{
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
+    
     transition: all 0.3s;
    
    
@@ -141,10 +144,24 @@ nav .right-side button {
     flex-direction: column;
   }
 
+ 
+
   nav .right-side #hidden a {
     margin: 15px;
     font-size: 1.6em;
+    text-align: center;
+    
   }
+
+  nav .right-side #hidden a:active {
+    margin: 15px;
+    font-size: 1.6em;
+    text-align: center;
+    transition: 0.4s;
+    
+  }
+
+  
 }
 
 @media only screen and (max-width: 450px) {
