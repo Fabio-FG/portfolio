@@ -5,6 +5,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: sticky;
 }
 
 nav .left-side {
@@ -39,6 +40,7 @@ nav .right-side button {
   display: none;
   margin-right: 35px;
   border: none;
+  transition: all 0.5s ease;
 }
 
 
