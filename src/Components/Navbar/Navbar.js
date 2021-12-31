@@ -8,6 +8,7 @@ function Navbar() {
       <header className="header">
         <input type="checkbox" className="nav-toggle" id="nav-toggle" />
         <label for="nav-toggle" className="nav-toggle-label">
+        {/* Hamburguer using span */}
           <span></span>
         </label>
         
