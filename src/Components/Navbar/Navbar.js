@@ -17,7 +17,7 @@ function Navbar() {
         </div>
 
         <nav className="nav-container">
-          <a href="#about">About me</a>
+          <a href="#about-me">About me</a>
           <a href="#about">Projects</a>
           <a href="#about">Contacts</a>
         </nav>

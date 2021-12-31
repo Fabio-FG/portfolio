@@ -32,12 +32,13 @@
 .intro h2 {
   font-size: 1.4em;
   margin-top: 10px;
+  margin-bottom: 1%;
 }
 
 /* Section 2 */
 
 .my-tech {
-  background-color: black;
+    background-color: rgb(16, 16, 82);
   color: white;
   display: flex;
   flex-direction: column;
@@ -48,10 +49,11 @@
 .my-tech h2 {
   margin-top: 5%;
   margin-bottom: 2%;
+  font-size: 1.8em;
 }
 
 .tech-container {
-  background-color: red;
+ 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -59,12 +61,18 @@
 }
 
 .tech-box {
-  background-color: blue;
-  margin: 10px;
-  width: 3vw;
-  height: 3vw;
+  
+  margin: 15px;
+  width: auto;
+  height: auto;
+  margin-bottom: 2%;
+  
 }
 
+.language-logo{
+    width: 4vw;
+    height: 4vw;
+}
 /* Section 3 - article about me */
 .about-me {
   display: flex;
@@ -74,7 +82,7 @@
 
 .about-me h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.8em;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -82,15 +90,10 @@
 .about-me-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
-.about-me-pic {
-  background-color: black;
-  width: 5vw;
-  height: 5vw;
-  margin-left: 10%;
-  margin-right: 2%;
-}
+
 
 .about-me-text {
   padding: 5px;
@@ -98,9 +101,56 @@
   width: 70%;
   text-align: justify;
   font-size: 1.2rem;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
 }
 
+/* Section 4 - projects section  */
+.my-projects {
+  background-color: rgb(71, 53, 53);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-projects h2{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-size: 1.8em;
+}
+.my-projects-wrapper {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project-box {
+  background-color: red;
+  margin: 15px;
+  width: 30vw;
+  height: 35vw;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+/* footer */
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer h2 {
+  text-align: center;
+  margin-top: 3%;
+}
+
+footer .footer-contacts {
+  margin-bottom: 3%;
+  margin-top: 2%;
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
   .container {
     display: flex;

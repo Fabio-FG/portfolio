@@ -1,5 +1,8 @@
 import "./HomePage.css";
-import myPic from "../.././images/fab.jpg";
+import myPic from "../../images/fab.jpg";
+import htmlLogo from "../../images/htmllogo.svg";
+import css3Logo from "../../images/css3logo.svg";
+import javascriptLogo from "../../images/javascriptlogo.svg";
 
 function HomePage() {
   return (
@@ -10,27 +13,33 @@ function HomePage() {
         <h2>Fullstack Web Developer</h2>
       </section>
       <section className="my-tech">
-        <h2>My Tech </h2>
+        <h2>My Tech Stack </h2>
         <div className="tech-container">
-          <div className="tech-box">A</div>
-          <div className="tech-box">B</div>
-          <div className="tech-box">C</div>
-          <div className="tech-box">D</div>
-          <div className="tech-box">E</div>
+          <div className="tech-box">
+            <img src={htmlLogo} alt="html" className="language-logo" />
+          </div>
+          <div className="tech-box">
+            <img src={css3Logo} alt="css3" className="language-logo" />
+          </div>
+          <div className="tech-box">
+            <img src={javascriptLogo} alt="javascript" className="language-logo" />
+          </div>
+          
+          
         </div>
       </section>
 
-      <article className="about-me">
+      <article className="about-me" id="about-me">
         <h2>About me</h2>
         <div className="about-me-wrapper">
-          <img src="" alt="about-me-pic" className="about-me-pic" />
-
           <div className="about-me-text">
-           <p> I first started to deal with the world of tech in 2014 when I did a
-            multimedia course in Lisbon. Although I did not pursue a career in
-            the big world of tech at the time I was always keeping an eye on it
-            and after completing a bachelor's and a master's degree in
-            Translation I decided to completely change my life around.
+            <p>
+              {" "}
+              I first started to deal with the world of tech in 2014 when I did
+              a multimedia course in Lisbon. Although I did not pursue a career
+              in the big world of tech at the time I was always keeping an eye
+              on it and after completing a bachelor's and a master's degree in
+              Translation I decided to completely change my life around.
             </p>
             <br></br> In 2020 I started to dabble with HTML, CSS and JavaScript
             and I became addicted to know more and learn how things worked. In
@@ -39,6 +48,24 @@ function HomePage() {
           </div>
         </div>
       </article>
+
+      <section className="my-projects">
+        <h2>My Projects</h2>
+        <div className="my-projects-wrapper">
+          <div className="project-box">1</div>
+          <div className="project-box">2</div>
+          <div className="project-box">3</div>
+        </div>
+      </section>
+
+      <footer>
+        <h2>Contact Me</h2>
+        <div className="footer-contacts">
+          <span>Github</span>
+          <span>Linkedin</span>
+          <span>Email</span>
+        </div>
+      </footer>
     </div>
   );
 }
