@@ -21,9 +21,11 @@
   color: white;
   font-size: 1.7em;
   margin-right: 12%;
+  width: 100%;
   padding: 0;
   text-decoration: none;
   transition-duration: 0.4s;
+  white-space: nowrap;
 }
 
 .nav-container a:hover {
@@ -51,6 +53,15 @@
 .nav-toggle-label span {
   display: none;
 }
+
+@media screen and (max-width: 750px) {
+  .nav-container{
+    font-size: 0.6em;
+  }
+}
+
+
+
 
 @media screen and (max-width: 650px) {
   .header {
