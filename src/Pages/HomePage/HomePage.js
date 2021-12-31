@@ -1,8 +1,11 @@
 import "./HomePage.css";
 import myPic from "../../images/fab.jpg";
 import htmlLogo from "../../images/htmllogo.svg";
-import css3Logo from "../../images/css3logo.svg";
+import cssLogo from "../../images/css3.svg";
 import javascriptLogo from "../../images/javascriptlogo.svg";
+import nodeLogo from "../../images/nodejs.svg";
+import reactLogo from "../../images/reactlogo1.svg";
+import mongoLogo from "../../images/mongodb.svg";
 
 function HomePage() {
   return (
@@ -18,11 +21,25 @@ function HomePage() {
           <div className="tech-box">
             <img src={htmlLogo} alt="html" className="language-logo" />
           </div>
+
           <div className="tech-box">
-            <img src={css3Logo} alt="css3" className="language-logo" />
+            <img src={cssLogo} alt="css" className="language-logo" />
           </div>
+          
           <div className="tech-box">
             <img src={javascriptLogo} alt="javascript" className="language-logo" />
+          </div>
+
+          <div className="tech-box">
+            <img src={reactLogo} alt="javascript" className="language-logo" />
+          </div>
+
+          <div className="tech-box">
+            <img src={nodeLogo} alt="javascript" className="language-logo" />
+          </div>
+
+          <div className="tech-box">
+            <img src={mongoLogo} alt="javascript" className="language-logo" />
           </div>
           
           

@@ -1,6 +1,13 @@
+/* Global Variables */
+:root{
+  --main-bg-color: rgb(16, 16, 82);   
+  --main-text-color: white;
+}
+
+
 .header {
   display: flex;
-  background-color: navy;
+  background-color: var(--main-bg-color);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   width: 100%;
@@ -18,7 +25,7 @@
 }
 
 .nav-container a {
-  color: white;
+  color: var(--main-text-color);
   font-size: 1.7em;
   margin-right: 10%;
   padding: 0;
@@ -57,7 +64,7 @@
 /* for tablets , ipad */
 @media screen and (max-width: 992px) {
   .header {
-    background-color: navy;
+    background-color: var(--main-bg-color);
     height: 70px;
     width: 100%;
     position: absolute;
@@ -78,7 +85,7 @@
   }
 
   .nav-container {
-    background-color: navy;
+    background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -95,7 +102,7 @@
   }
 
   .nav-container a {
-    color: white;
+    color: var(--main-text-color);
     font-size: 1.7em;
     margin-right: 0%;
     padding: 0;
@@ -107,6 +114,7 @@
   .nav-toggle:checked ~ nav {
     transform: scale(1, 1);
     transition: 0.5s;
+    position: absolute;
   }
 
   .nav-toggle:checked ~ nav a {
@@ -123,8 +131,8 @@
   .nav-toggle:checked ~ nav a:hover {
     transition: 0.5s;
     transform: scale(1);
-    background: white;
-    color: navy;
+    background: var(--main-text-color);
+    color: var(--main-bg-color);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -142,7 +150,7 @@
     height: 70%;
     display: flex;
     align-items: center;
-    background-color: navy;
+    background-color: var(--main-bg-color);
     margin-right: 5%;
   }
 
@@ -174,11 +182,10 @@
 /* for phones */
 @media screen and (max-width: 768px) {
   .header {
-    background-color: navy;
+    background-color: var(--main-bg-color);
     height: 70px;
     width: 100%;
     position: absolute;
-    
    
   }
 
@@ -192,11 +199,11 @@
 
   .logo h1{
     margin: auto;
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .nav-container {
-    background-color: navy;
+    background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -213,7 +220,7 @@
   }
 
   .nav-container a {
-    color: white;
+    color: var(--main-text-color);
     font-size: 1.7em;
     margin-right: 0%;
     padding: 0;
@@ -225,6 +232,7 @@
   .nav-toggle:checked ~ nav {
     transform: scale(1, 1);
     transition: 0.5s;
+    position: absolute;
   }
 
   .nav-toggle:checked ~ nav a {
@@ -241,8 +249,8 @@
   .nav-toggle:checked ~ nav a:hover {
     transition: 0.5s;
     transform: scale(1);
-    background: white;
-    color: navy;
+    background: var(--main-text-color);
+    color: var(--main-bg-color);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -260,7 +268,7 @@
     height: 70%;
     display: flex;
     align-items: center;
-    background-color: navy;
+    background-color: var(--main-bg-color);
     margin-right: 5%;
   }
 
@@ -293,7 +301,7 @@
 /* smaller phones and smaller devices */
 @media screen and (max-width: 575px) {
   .header {
-    background-color: navy;
+    background-color: var(--main-bg-color);
     height: 70px;
     width: 100%;
     position: absolute;
@@ -310,11 +318,11 @@
 
   .logo h1{
     margin: auto;
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .nav-container {
-    background-color: navy;
+    background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -331,7 +339,7 @@
   }
 
   .nav-container a {
-    color: white;
+    color: var(--main-text-color);
     font-size: 1.7em;
     margin-right: 0%;
     padding: 0;
@@ -343,6 +351,7 @@
   .nav-toggle:checked ~ nav {
     transform: scale(1, 1);
     transition: 0.5s;
+    position: absolute;
   }
 
   .nav-toggle:checked ~ nav a {
@@ -359,8 +368,8 @@
   .nav-toggle:checked ~ nav a:hover {
     transition: 0.5s;
     transform: scale(1);
-    background: white;
-    color: navy;
+    background: var(--main-text-color);
+    color: var(--main-bg-color);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -378,7 +387,7 @@
     height: 70%;
     display: flex;
     align-items: center;
-    background-color: navy;
+    background-color: var(--main-bg-color);
     margin-right: 5%;
   }
 
@@ -407,3 +416,4 @@
     top: 8px;
   }
 }
+

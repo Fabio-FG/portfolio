@@ -1,3 +1,10 @@
+/* Global Variables */
+:root{
+    --main-bg-color: rgb(16, 16, 82);   
+    --main-text-color: white;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -15,14 +22,27 @@
 .intro {
   text-align: center;
   background-color: rgb(16, 16, 82);
-  color: white;
+  color: var(--main-text-color);
 }
 .my-pic {
   margin-top: 8%;
   width: 10vw;
   height: 10vw;
   border-radius: 50%;
+  filter: grayscale(70%);
+  transition: 0.4s;
+  
 }
+
+.my-pic:hover {
+    margin-top: 8%;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    filter: none;
+    transition: 0.4s;
+    
+  }
 
 .intro h1 {
   font-size: 2em;
@@ -38,7 +58,7 @@
 /* Section 2 */
 
 .my-tech {
-    background-color: rgb(16, 16, 82);
+    background-color: var(--main-bg-color);
   color: white;
   display: flex;
   flex-direction: column;
@@ -62,17 +82,30 @@
 
 .tech-box {
   
-  margin: 15px;
+  margin: 18px;
   width: auto;
   height: auto;
   margin-bottom: 2%;
   
+  
 }
 
+
 .language-logo{
-    width: 4vw;
-    height: 4vw;
+    width: 50px;
+    height: 50px;
+    filter:opacity(60%);
+    filter:grayscale(100%);
+    transition: 0.4s;
 }
+
+.language-logo:hover{
+    filter:none;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+
 /* Section 3 - article about me */
 .about-me {
   display: flex;
@@ -107,7 +140,7 @@
 /* Section 4 - projects section  */
 .my-projects {
   background-color: rgb(71, 53, 53);
-  color: white;
+  color: var(--main-text-color);
   display: flex;
   flex-direction: column;
 }
@@ -138,7 +171,7 @@
 
 footer {
   background-color: black;
-  color: white;
+  color: var(--main-text-color);
 }
 
 footer h2 {
