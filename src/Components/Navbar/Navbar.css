@@ -1,13 +1,14 @@
 /* Global Variables */
 :root{
   --main-bg-color: rgb(16, 16, 82);   
+  --secondary-bg-color: rgb(34, 32, 32);  
   --main-text-color: white;
 }
 
 
 .header {
   display: flex;
-  background-color: var(--main-bg-color);
+  background-color: var(--secondary-bg-color);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   width: 100%;
@@ -15,6 +16,7 @@
   flex-direction: row;
   height: 70px;
   z-index: 2;
+  position: fixed;
 }
 
 .nav-container {
@@ -185,7 +187,7 @@
     background-color: var(--main-bg-color);
     height: 70px;
     width: 100%;
-    position: absolute;
+    position: fixed;
    
   }
 
@@ -301,10 +303,10 @@
 /* smaller phones and smaller devices */
 @media screen and (max-width: 575px) {
   .header {
-    background-color: var(--main-bg-color);
+    background-color: var(--secondary-bg-color);
     height: 70px;
     width: 100%;
-    position: absolute;
+    position: fixed;
    
   }
 

@@ -49,7 +49,7 @@ function HomePage() {
           </div>
         </div>
       </section>
-
+<span className="split"></span>
       <article className="about-me" id="about-me">
         <h2>About me</h2>
         <div className="about-me-wrapper">
@@ -75,11 +75,11 @@ function HomePage() {
         <div className="my-projects-wrapper">
           <div className="project-box">
             
-            <div className="project-text-container">
              <img src="" alt="project-logo" className="project-logo"/>
+            <div className="project-text-container">
              <h2 className="project-title">Space Runner</h2>
              
-              <p>
+              <p className="project-text">
                 A running game where you dodge the debris in space by
                 challenging the speed limits of your eyes.
               </p>
@@ -101,7 +101,7 @@ function HomePage() {
               </div>
               <div className="tech-used">
                 <h3>Technology used:</h3>
-                <ul>
+                <ul className="tech-list">
                   <li>Html Canvas</li>
                   <li>CSS</li>
                   <li>Vanilla JS</li>
@@ -109,8 +109,79 @@ function HomePage() {
               </div>
             </div>
           </div>
-          <div className="project-box">2</div>
-          <div className="project-box">3</div>
+          <div className="project-box"><img src="" alt="project-logo" className="project-logo"/>
+            <div className="project-text-container">
+             <h2 className="project-title">HybridBox</h2>
+             
+              <p className="project-text">
+                A running game where you dodge the debris in space by
+                challenging the speed limits of your eyes.
+              </p>
+              <div className="button-wrapper">
+                <a
+                  href="https://spacerunner-thegame.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/Fabio-FG/SpaceRunner-game"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source Code
+                </a>
+              </div>
+              <div className="tech-used">
+                <h3 >Technology used:</h3>
+                <ul className="tech-list">
+                  <li>Html</li>
+                  <li>CSS</li>
+                  <li>ReactJS</li>
+                  <li>NodeJS</li>
+                  <li>MongoDB</li>
+                  <li>Postman</li>
+                </ul>
+              </div>
+            </div></div>
+          <div className="project-box"><img src="" alt="project-logo" className="project-logo"/>
+            <div className="project-text-container">
+             <h2 className="project-title">TheGameList</h2>
+             
+              <p className="project-text">
+                A running game where you dodge the debris in space by
+                challenging the speed limits of your eyes.
+              </p>
+              <div className="button-wrapper">
+                <a
+                  href="https://spacerunner-thegame.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/Fabio-FG/SpaceRunner-game"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source Code
+                </a>
+              </div>
+              <div className="tech-used">
+                <h3>Technology used:</h3>
+                <ul className="tech-list">
+                  <li>Html</li>
+                  <li>CSS</li>
+                  <li>NodeJS</li>
+                  <li>ExpressJS</li>
+                  <li>Handlebars</li>
+                  <li>MongoDB</li>
+                  <li>Axios</li>
+                </ul>
+              </div>
+            </div></div>
         </div>
       </section>
 
