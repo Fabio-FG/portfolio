@@ -1,6 +1,7 @@
 /* Global Variables */
 :root{
-    --main-bg-color: rgb(16, 16, 82);   
+    --main-bg-color: rgb(16, 16, 82); 
+    --secondary-bg-color: rgb(34, 32, 32);  
     --main-text-color: white;
 }
 
@@ -21,7 +22,7 @@
 
 .intro {
   text-align: center;
-  background-color: rgb(16, 16, 82);
+  background-color: var(--secondary-bg-color);
   color: var(--main-text-color);
 }
 .my-pic {
@@ -55,6 +56,11 @@
   margin-bottom: 1%;
 }
 
+.alpha-code{
+    margin-left: 5px;
+    font-size: 0.5em;
+}
+
 /* Section 2 */
 
 .my-tech {
@@ -78,6 +84,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .tech-box {
@@ -110,13 +117,15 @@
 .about-me {
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  
 }
 
 .about-me h2 {
   text-align: center;
   font-size: 1.8em;
-  margin-top: 2%;
+  margin-top: 10%;
   margin-bottom: 2%;
 }
 
@@ -124,14 +133,16 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+
 }
 
 
 
 .about-me-text {
+    
   padding: 5px;
   line-height: 25px;
-  width: 70%;
+  width: 60%;
   text-align: justify;
   font-size: 1.2rem;
   margin-bottom: 4%;
@@ -159,12 +170,69 @@
 }
 
 .project-box {
-  background-color: red;
+  background-color: var(--secondary-bg-color);
   margin: 15px;
   width: 30vw;
   height: 35vw;
   margin-top: 2%;
   margin-bottom: 5%;
+}
+
+.project-text-container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.project-logo{
+    background-color: black;
+    width: 10vw;
+    height: 10vw;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 2%;
+
+}
+
+.project-title{
+    margin-bottom: 15%;
+    color: var(--main-text-color);
+    padding-bottom: 10px;
+}
+
+.button-wrapper{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.button-wrapper a{
+    margin: 5px;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 15px;
+    margin-top: 5%;
+    border: hidden;
+    margin-bottom: 5%;
+    
+}
+
+.tech-used h3{
+    margin-bottom: 5%;
+}
+.tech-used ul{
+    margin-bottom: 2%;
+}
+
+.tech-used li{
+    list-style: none;
+    display: inline-flex;
+    margin: 10px;
 }
 
 /* footer */
@@ -185,38 +253,187 @@ footer .footer-contacts {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-  }
-
-  .intro {
-    text-align: center;
-    background-color: blue;
-    color: white;
-  }
-
-  .intro h1 {
-    font-size: 2em;
-  }
-
-  .intro h2 {
-    font-size: 1.4em;
-  }
-
-  .my-pic {
-    margin-top: 20%;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
-  }
-
-  /* Section 2 */
-
-  .my-tech {
-    background-color: black;
-    color: white;
-  }
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+      }
+      
+      .intro {
+        text-align: center;
+        background-color: rgb(16, 16, 82);
+        color: var(--main-text-color);
+      }
+      .my-pic {
+        margin-top: 20%;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+        filter: grayscale(70%);
+        transition: 0.4s;
+        
+      }
+      
+      .my-pic:hover {
+          margin-top: 20%;
+          width: 20vw;
+          height: 20vw;
+          border-radius: 50%;
+          filter: none;
+          transition: 0.4s;
+          
+        }
+      
+      .intro h1 {
+        font-size: 2em;
+        margin-top: 7%;
+      }
+      
+      .intro h2 {
+        font-size: 1.4em;
+        margin-top: 10px;
+        margin-bottom: 15%;
+      }
+      
+      .alpha-code{
+          margin-left: 5px;
+          font-size: 0.5em;
+      }
+      
+      /* Section 2 */
+      
+      .my-tech {
+          background-color: var(--main-bg-color);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .my-tech h2 {
+        margin-top: 5%;
+        margin-bottom: 2%;
+        font-size: 1.8em;
+      }
+      
+      .tech-container {
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        padding-bottom: 5%;
+      }
+      
+      .tech-box {
+        
+        margin: 18px;
+        width: auto;
+        height: auto;
+        margin-bottom: 2%;
+        
+        
+      }
+      
+      
+      .language-logo{
+          width: 50px;
+          height: 50px;
+          filter:opacity(60%);
+          filter:grayscale(100%);
+          transition: 0.4s;
+      }
+      
+      .language-logo:hover{
+          filter:none;
+          transform: scale(1.1);
+          transition: 0.4s;
+      }
+      
+      
+      /* Section 3 - article about me */
+      .about-me {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: var(--main-text-color);
+      }
+      
+      .about-me h2 {
+        text-align: center;
+        font-size: 1.8em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+      
+      .about-me-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      
+      
+      
+      .about-me-text {
+        padding: 5px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        width: 90%;
+        text-align: justify;
+        font-size: 1.2rem;
+        margin-top: 5%;
+        margin-bottom: 14%;
+      }
+      
+      /* Section 4 - projects section  */
+      .my-projects {
+        background-color: rgb(71, 53, 53);
+        color: var(--main-text-color);
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .my-projects h2{
+          text-align: center;
+          margin-top: 3%;
+          margin-bottom: 2%;
+          font-size: 1.8em;
+      }
+      .my-projects-wrapper {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      
+      .project-box {
+        background-color: red;
+        margin: 15px;
+        width: 30vw;
+        height: 35vw;
+        margin-top: 2%;
+        margin-bottom: 5%;
+      }
+      
+      /* footer */
+      
+      footer {
+        background-color: black;
+        color: var(--main-text-color);
+      }
+      
+      footer h2 {
+        text-align: center;
+        margin-top: 3%;
+      }
+      
+      footer .footer-contacts {
+        margin-bottom: 3%;
+        margin-top: 2%;
+        text-align: center;
+      }
 }

@@ -13,7 +13,9 @@ function HomePage() {
       <section className="intro">
         <img src={myPic} alt="my-intro-pic" className="my-pic"></img>
         <h1>My name is Fábio Guerreiro</h1>
-        <h2>Fullstack Web Developer</h2>
+        <h2>
+          Jr. Fullstack Web Developer<small className="alpha-code">PT</small>
+        </h2>
       </section>
       <section className="my-tech">
         <h2>My Tech Stack </h2>
@@ -25,9 +27,13 @@ function HomePage() {
           <div className="tech-box">
             <img src={cssLogo} alt="css" className="language-logo" />
           </div>
-          
+
           <div className="tech-box">
-            <img src={javascriptLogo} alt="javascript" className="language-logo" />
+            <img
+              src={javascriptLogo}
+              alt="javascript"
+              className="language-logo"
+            />
           </div>
 
           <div className="tech-box">
@@ -41,8 +47,6 @@ function HomePage() {
           <div className="tech-box">
             <img src={mongoLogo} alt="javascript" className="language-logo" />
           </div>
-          
-          
         </div>
       </section>
 
@@ -69,7 +73,42 @@ function HomePage() {
       <section className="my-projects">
         <h2>My Projects</h2>
         <div className="my-projects-wrapper">
-          <div className="project-box">1</div>
+          <div className="project-box">
+            
+            <div className="project-text-container">
+             <img src="" alt="project-logo" className="project-logo"/>
+             <h2 className="project-title">Space Runner</h2>
+             
+              <p>
+                A running game where you dodge the debris in space by
+                challenging the speed limits of your eyes.
+              </p>
+              <div className="button-wrapper">
+                <a
+                  href="https://spacerunner-thegame.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/Fabio-FG/SpaceRunner-game"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source Code
+                </a>
+              </div>
+              <div className="tech-used">
+                <h3>Technology used:</h3>
+                <ul>
+                  <li>Html Canvas</li>
+                  <li>CSS</li>
+                  <li>Vanilla JS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div className="project-box">2</div>
           <div className="project-box">3</div>
         </div>
