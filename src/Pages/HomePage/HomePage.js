@@ -1,4 +1,5 @@
 import "./HomePage.css";
+import React from "react";
 import myPic from "../../images/fab.jpg";
 import htmlLogo from "../../images/htmllogo.svg";
 import cssLogo from "../../images/css3.svg";
@@ -6,6 +7,12 @@ import javascriptLogo from "../../images/javascriptlogo.svg";
 import nodeLogo from "../../images/nodejs.svg";
 import reactLogo from "../../images/reactlogo1.svg";
 import mongoLogo from "../../images/mongodb.svg";
+import postmanLogo from "../../images/postman.svg";
+import hybridboxlogo from "../../images/hybridbox-logo.png";
+import atlaslogo from "../../images/atlas.png";
+import gamelistLogo from "../../images/gamelist-logo.png";
+import handlebarsLogo from "../../images/handlebars.svg";
+import axiosLogo from "../../images/axios.svg";
 
 function HomePage() {
   return (
@@ -18,7 +25,7 @@ function HomePage() {
         </h2>
       </section>
       <section className="my-tech">
-        <h2>My Tech Stack </h2>
+        <h2>My Tech Tools </h2>
         <div className="tech-container">
           <div className="tech-box">
             <img src={htmlLogo} alt="html" className="language-logo" />
@@ -37,15 +44,19 @@ function HomePage() {
           </div>
 
           <div className="tech-box">
-            <img src={reactLogo} alt="javascript" className="language-logo" />
+            <img src={reactLogo} alt="reactJS" className="language-logo" />
           </div>
 
           <div className="tech-box">
-            <img src={nodeLogo} alt="javascript" className="language-logo" />
+            <img src={nodeLogo} alt="nodeJS" className="language-logo" />
           </div>
 
           <div className="tech-box">
-            <img src={mongoLogo} alt="javascript" className="language-logo" />
+            <img src={mongoLogo} alt="mongoDB" className="language-logo" />
+          </div>
+
+          <div className="tech-box">
+            <img src={postmanLogo} alt="postman" className="language-logo" />
           </div>
         </div>
       </section>
@@ -56,6 +67,7 @@ function HomePage() {
           <div className="about-me-text">
             <p>
               {" "}
+              I am a Web Developer based in Lisbon, Portugal and I am also an aspiring manga artist.
               I first started to deal with the world of tech in 2014 when I did
               a multimedia course in Lisbon. Although I did not pursue a career
               in the big world of tech at the time I was always keeping an eye
@@ -70,12 +82,12 @@ function HomePage() {
         </div>
       </article>
 
-      <section className="my-projects">
+      <section className="my-projects" id="projects">
         <h2>My Projects</h2>
         <div className="my-projects-wrapper">
           <div className="project-box">
             
-             <img src="" alt="project-logo" className="project-logo"/>
+             <img src={atlaslogo} alt="project-logo" className="project-logo"/>
             <div className="project-text-container">
              <h2 className="project-title">Space Runner</h2>
              
@@ -102,14 +114,14 @@ function HomePage() {
               <div className="tech-used">
                 <h3>Technology used:</h3>
                 <ul className="tech-list">
-                  <li>Html Canvas</li>
-                  <li>CSS</li>
-                  <li>Vanilla JS</li>
+                <li><img src={htmlLogo} alt="html" className="language-logo" /></li>
+                  <li><img src={cssLogo} alt="css" className="language-logo" /></li>
+                  <li><img src={javascriptLogo} alt="javascript" className="language-logo" /></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="project-box"><img src="" alt="project-logo" className="project-logo"/>
+          <div className="project-box"><img src={hybridboxlogo}alt="project-logo" className="project-logo"/>
             <div className="project-text-container">
              <h2 className="project-title">HybridBox</h2>
              
@@ -136,16 +148,17 @@ function HomePage() {
               <div className="tech-used">
                 <h3 >Technology used:</h3>
                 <ul className="tech-list">
-                  <li>Html</li>
-                  <li>CSS</li>
-                  <li>ReactJS</li>
-                  <li>NodeJS</li>
-                  <li>MongoDB</li>
-                  <li>Postman</li>
+                <li><img src={htmlLogo} alt="html" className="language-logo" /></li>
+                <li><img src={cssLogo} alt="css" className="language-logo" /></li>
+                <li><img src={reactLogo} alt="reactJS" className="language-logo" /></li>
+                <li><img src={nodeLogo} alt="nodeJS" className="language-logo" /></li>
+                <li><img src={mongoLogo} alt="mongoDB" className="language-logo" /></li>
+                <li><img src={postmanLogo} alt="postman" className="language-logo" /></li>
                 </ul>
               </div>
             </div></div>
-          <div className="project-box"><img src="" alt="project-logo" className="project-logo"/>
+          <div className="project-box">
+          <img src={gamelistLogo} alt="project-logo" className="project-logo" id="gamelist"/>
             <div className="project-text-container">
              <h2 className="project-title">TheGameList</h2>
              
@@ -172,13 +185,12 @@ function HomePage() {
               <div className="tech-used">
                 <h3>Technology used:</h3>
                 <ul className="tech-list">
-                  <li>Html</li>
-                  <li>CSS</li>
-                  <li>NodeJS</li>
-                  <li>ExpressJS</li>
-                  <li>Handlebars</li>
-                  <li>MongoDB</li>
-                  <li>Axios</li>
+                <li><img src={htmlLogo} alt="html" className="language-logo" /></li>
+                <li><img src={cssLogo} alt="css" className="language-logo" /></li>
+                <li><img src={nodeLogo} alt="nodeJS" className="language-logo" /></li>
+                <li><img src={handlebarsLogo} alt="handlebars" className="language-logo" /></li>
+                  <li><img src={mongoLogo} alt="mongoDB" className="language-logo" /></li>
+                  <li><img src={axiosLogo} alt="axios" className="language-logo" /></li>
                 </ul>
               </div>
             </div></div>

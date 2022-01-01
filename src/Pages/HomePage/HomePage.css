@@ -202,13 +202,22 @@ body{
    
 }
 .project-logo{
-    background-color: black;
-    width: 10vw;
-    height: 10vw;
+    
+    
+    width: 8vw;
+    height: 8vw;
     margin: auto;
     margin-top: 10%;
     margin-bottom: 2%;
 
+
+}
+
+#gamelist{
+    filter:invert(30);
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 50%;
 }
 
 .project-title{
@@ -460,13 +469,21 @@ footer .footer-contacts {
           text-align: center;
       }
       .project-logo{
-          background-color: black;
+          
           width: 25vw;
           height: 25vw;
           margin: auto;
           margin-top: 10%;
           margin-bottom: 2%;
       
+      }
+
+
+      #gamelist{
+         
+          width: 25vw;
+          height: 25vw;
+          
       }
       
       .project-title{
