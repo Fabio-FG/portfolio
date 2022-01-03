@@ -25,7 +25,7 @@ function HomePage() {
         </h2>
       </section>
       <section className="my-tech">
-        <h2>My Tech Tools </h2>
+        <h2>My Tech Stack </h2>
         <div className="tech-container">
           <div className="tech-box">
             <img src={htmlLogo} alt="html" className="language-logo" />
@@ -55,9 +55,7 @@ function HomePage() {
             <img src={mongoLogo} alt="mongoDB" className="language-logo" />
           </div>
 
-          <div className="tech-box">
-            <img src={postmanLogo} alt="postman" className="language-logo" />
-          </div>
+          
         </div>
       </section>
 <span className="split"></span>
