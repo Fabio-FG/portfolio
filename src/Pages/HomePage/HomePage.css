@@ -160,63 +160,59 @@ body {
   flex-direction: column;
 }
 
-.my-projects h2 {
+.myprojects-title{
   text-align: center;
+  font-size: 2em;
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+.my-projects h3 {
   margin-top: 3%;
   margin-bottom: 2%;
   font-size: 1.8em;
 }
 .my-projects-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .project-box {
   background-color: var(--secondary-bg-color);
-  margin: 15px;
+  margin: auto;
   margin-top: 2%;
-  margin-bottom: 12%;
+  margin-bottom: 5%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 55%;
+  
 }
 
 .project-text-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  text-align: left;
+  padding: 10px;
+  
 }
 .project-logo {
   width: 8vw;
   height: 8vw;
   margin: auto;
-  margin-top: 10%;
-  margin-bottom: 2%;
+  padding: 20px;
+ 
 }
 
-#gamelist {
-  filter: invert(30);
-  border: 2px solid red;
-  padding: 5px;
-  border-radius: 50%;
-}
-
-.project-title {
-  margin-bottom: 15%;
-  color: var(--main-text-color);
-  padding-bottom: 10px;
-}
 
 .project-text {
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 
 .button-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  
 }
 
 .button-wrapper a {
@@ -229,6 +225,13 @@ body {
   margin-top: 5%;
   border: hidden;
   margin-bottom: 5%;
+}
+
+.modal-btn{
+  width: 100px;
+  margin: auto;
+  margin-top: 5px;
+  display: none;
 }
 
 .tech-used h3 {
@@ -262,7 +265,7 @@ footer h2 {
   flex-direction: column;
 }
 
-.footer-contacts{
+.footer-contacts {
   margin: auto;
   padding-top: 2%;
   margin-bottom: 5%;
@@ -270,7 +273,6 @@ footer h2 {
 
 .footer-contacts span {
   margin: 30px;
-  
 }
 
 @media screen and (max-width: 768px) {

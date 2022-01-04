@@ -68,6 +68,10 @@ function HomePage() {
           <div className="tech-box">
             <img src={mongoLogo} alt="mongoDB" className="language-logo" />
           </div>
+
+          <div className="tech-box">
+            <img src={handlebarsLogo} alt="handlebars" className="language-logo" />
+          </div>
         </div>
       </section>
       <span className="split"></span>
@@ -94,53 +98,25 @@ function HomePage() {
       </article>
 
       <section className="my-projects" id="projects">
-        <h2>My Projects</h2>
+        <h2 className="myprojects-title">My Projects</h2>
         <div className="my-projects-wrapper">
           <div className="project-box">
             <img src={atlaslogo} alt="project-logo" className="project-logo" />
             <div className="project-text-container">
-              <h2 className="project-title">Space Runner</h2>
+              <h3 className="project-title">Space Runner</h3>
 
               <p className="project-text">
                 A running game where you dodge the debris in space by
                 challenging the speed limits of your eyes.
               </p>
               <div className="button-wrapper">
-                <a
-                  href="https://spacerunner-thegame.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Live Demo
-                </a>
-                <a
-                  href="https://github.com/Fabio-FG/SpaceRunner-game"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code
-                </a>
+              <a href="">Live Demo</a>
+                
+               <a href="">Source Code</a>
               </div>
-              <div className="tech-used">
-                <h3>Technology used:</h3>
-                <ul className="tech-list">
-                  <li>
-                    <img src={htmlLogo} alt="html" className="language-logo" />
-                  </li>
-                  <li>
-                    <img src={cssLogo} alt="css" className="language-logo" />
-                  </li>
-                  <li>
-                    <img
-                      src={javascriptLogo}
-                      alt="javascript"
-                      className="language-logo"
-                    />
-                  </li>
-                </ul>
-              </div>
+             
             </div>
-            <button onClick={openModal}>Modal Btn</button>
+            <button onClick={openModal} className="modal-btn">Modal Btn</button>
             <Modal showModal={showModal} setShowModal={setShowModal} />
           </div>
 
@@ -157,60 +133,11 @@ function HomePage() {
                 A running game where you dodge the debris in space by
                 challenging the speed limits of your eyes.
               </p>
+              
               <div className="button-wrapper">
-                <a
-                  href="https://spacerunner-thegame.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Live Demo
-                </a>
-                <a
-                  href="https://github.com/Fabio-FG/SpaceRunner-game"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code
-                </a>
-              </div>
-              <div className="tech-used">
-                <h3>Technology used:</h3>
-                <ul className="tech-list">
-                  <li>
-                    <img src={htmlLogo} alt="html" className="language-logo" />
-                  </li>
-                  <li>
-                    <img src={cssLogo} alt="css" className="language-logo" />
-                  </li>
-                  <li>
-                    <img
-                      src={reactLogo}
-                      alt="reactJS"
-                      className="language-logo"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src={nodeLogo}
-                      alt="nodeJS"
-                      className="language-logo"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src={mongoLogo}
-                      alt="mongoDB"
-                      className="language-logo"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src={postmanLogo}
-                      alt="postman"
-                      className="language-logo"
-                    />
-                  </li>
-                </ul>
+              <a href="">Live Demo</a>
+                
+               <a href="">Source Code</a>
               </div>
             </div>
           </div>
@@ -229,59 +156,9 @@ function HomePage() {
                 challenging the speed limits of your eyes.
               </p>
               <div className="button-wrapper">
-                <a
-                  href="https://spacerunner-thegame.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Live Demo
-                </a>
-                <a
-                  href="https://github.com/Fabio-FG/SpaceRunner-game"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code
-                </a>
-              </div>
-              <div className="tech-used">
-                <h3>Technology used:</h3>
-                <ul className="tech-list">
-                  <li>
-                    <img src={htmlLogo} alt="html" className="language-logo" />
-                  </li>
-                  <li>
-                    <img src={cssLogo} alt="css" className="language-logo" />
-                  </li>
-                  <li>
-                    <img
-                      src={nodeLogo}
-                      alt="nodeJS"
-                      className="language-logo"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src={handlebarsLogo}
-                      alt="handlebars"
-                      className="language-logo"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src={mongoLogo}
-                      alt="mongoDB"
-                      className="language-logo"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src={axiosLogo}
-                      alt="axios"
-                      className="language-logo"
-                    />
-                  </li>
-                </ul>
+              <a href="">Live Demo</a>
+                
+               <a href="">Source Code</a>
               </div>
             </div>
           </div>
