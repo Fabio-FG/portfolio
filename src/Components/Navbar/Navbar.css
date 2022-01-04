@@ -2,20 +2,23 @@
 :root{
   --main-bg-color: rgb(16, 16, 82);   
   --secondary-bg-color: rgb(34, 32, 32);  
-  --main-text-color: white;
+  --main-text-color: rgb(225,225,225);
 }
 
 
 .header {
   display: flex;
-  background-color: var(--secondary-bg-color);
+  background-color: rgba(89, 89, 175, 0.342);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(6.5px);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   width: 100%;
+  color: var(--main-text-color);
   top: 0;
   flex-direction: row;
   height: 70px;
-  z-index: 2;
+  z-index: 5;
   position: fixed;
 }
 
@@ -24,10 +27,11 @@
   display: flex;
   align-items: center;
   justify-content: right;
+  color: white;
 }
 
 .nav-container a {
-  color: var(--main-text-color);
+  color: white;
   font-size: 1.7em;
   margin-right: 10%;
   padding: 0;
@@ -39,6 +43,7 @@
 .nav-container a:hover {
   transform: scale(1.1);
   transition-duration: 0.4s;
+  color: var(--main-text-color);
 }
 
 .logo {

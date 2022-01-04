@@ -1,7 +1,7 @@
 import "./HomePage.css";
 import React from "react";
 import myPic from "../../images/fab.jpg";
-/* import bgImage from "../../images/andy-holmes-rCbdp8VCYhQ-unsplash.jpg"; */
+import bgImage from "../../images/Meteor.svg";
 import { useState } from "react";
 import Modal from "../../Components/Modal/Modal";
 import htmlLogo from "../../images/htmllogo.svg";
@@ -10,13 +10,13 @@ import javascriptLogo from "../../images/javascriptlogo.svg";
 import nodeLogo from "../../images/nodejs.svg";
 import reactLogo from "../../images/reactlogo1.svg";
 import mongoLogo from "../../images/mongodb.svg";
-import postmanLogo from "../../images/postman.svg";
+import { Link } from "react-router-dom";
 import hybridboxlogo from "../../images/hybridbox-logo.png";
 import atlaslogo from "../../images/atlas.png";
 import gamelistLogo from "../../images/gamelist-logo.png";
 import handlebarsLogo from "../../images/handlebars.svg";
-import axiosLogo from "../../images/axios.svg";
-import ContactForm from "../../Components/ContactForm/ContactForm";
+
+import "../../Components/Navbar/Navbar.css";
 
 function HomePage() {
   const [showModal, setShowModal] = useState(false);
@@ -28,16 +28,19 @@ function HomePage() {
 
   return (
     <div className="container">
-      <section className="intro">
-        <img src={myPic} alt="my-intro-pic" className="my-pic"></img>
-        <div className="intro-text">
-          <h1>My name is Fábio Guerreiro</h1>
-          <h2>
-            Jr. Fullstack Web Developer<small className="alpha-code">PT</small>
-          </h2>
-        </div>
-        {/*  <img src={bgImage} alt="bg-header" className="bg-image" /> */}
-      </section>
+      <div className="intro-wrapper">
+        <section className="intro">
+          <img src={myPic} alt="my-intro-pic" className="my-pic"></img>
+          <div className="intro-text">
+            <h1>I am Fábio Guerreiro</h1>
+            <h2>
+              Jr. Fullstack Web Developer
+              <small className="alpha-code">PT</small>
+            </h2>
+          </div>
+          <img src={bgImage} alt="bg-header" className="bg-image" />
+        </section>
+      </div>
       <section className="my-tech">
         <h2>My Tech Stack </h2>
         <div className="tech-container">
@@ -70,7 +73,11 @@ function HomePage() {
           </div>
 
           <div className="tech-box">
-            <img src={handlebarsLogo} alt="handlebars" className="language-logo" />
+            <img
+              src={handlebarsLogo}
+              alt="handlebars"
+              className="language-logo"
+            />
           </div>
         </div>
       </section>
@@ -96,9 +103,10 @@ function HomePage() {
           </div>
         </div>
       </article>
-
+      
       <section className="my-projects" id="projects">
         <h2 className="myprojects-title">My Projects</h2>
+       
         <div className="my-projects-wrapper">
           <div className="project-box">
             <img src={atlaslogo} alt="project-logo" className="project-logo" />
@@ -110,16 +118,17 @@ function HomePage() {
                 challenging the speed limits of your eyes.
               </p>
               <div className="button-wrapper">
-              <a href="">Live Demo</a>
-                
-               <a href="">Source Code</a>
+                <Link to="">Live Demo</Link>
+
+                <Link to="">Source Code</Link>
               </div>
-             
             </div>
-            <button onClick={openModal} className="modal-btn">Modal Btn</button>
+            <button onClick={openModal} className="modal-btn">
+              Modal Btn
+            </button>
             <Modal showModal={showModal} setShowModal={setShowModal} />
           </div>
-
+<hr className="hr-project"></hr>
           <div className="project-box">
             <img
               src={hybridboxlogo}
@@ -130,16 +139,18 @@ function HomePage() {
               <h3 className="project-title">HybridBox</h3>
 
               <p className="project-text">
-              An app where you can customise streaming services and handpick your favourite channels and streams.
+                An app where you can customise streaming services and handpick
+                your favourite channels and streams.
               </p>
-              
+
               <div className="button-wrapper">
-              <a href="">Live Demo</a>
-                
-               <a href="">Source Code</a>
+                <Link to="">Live Demo</Link>
+
+                <Link to="">Source Code</Link>
               </div>
             </div>
           </div>
+          <hr className="hr-project"></hr>
           <div className="project-box">
             <img
               src={gamelistLogo}
@@ -151,12 +162,12 @@ function HomePage() {
               <h3 className="project-title">TheGameList</h3>
 
               <p className="project-text">
-              An app where you can list your game in a database.
+                An app where you can list your game in a database.
               </p>
               <div className="button-wrapper">
-              <a href="">Live Demo</a>
-                
-               <a href="">Source Code</a>
+                <Link to="">Live Demo</Link>
+
+                <Link to="">Source Code</Link>
               </div>
             </div>
           </div>
@@ -166,14 +177,12 @@ function HomePage() {
       <footer>
         <h2>Contact Me</h2>
         <div className="footer-container">
-          
-          
           <div className="footer-contacts">
             <span>Github</span>
             <span>Linkedin</span>
             <span>Email</span>
           </div>
-            {/* <ContactForm /> */}
+          {/* <ContactForm /> */}
         </div>
       </footer>
     </div>
