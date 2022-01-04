@@ -127,11 +127,10 @@ function HomePage() {
               className="project-logo"
             />
             <div className="project-text-container">
-              <h2 className="project-title">HybridBox</h2>
+              <h3 className="project-title">HybridBox</h3>
 
               <p className="project-text">
-                A running game where you dodge the debris in space by
-                challenging the speed limits of your eyes.
+              An app where you can customise streaming services and handpick your favourite channels and streams.
               </p>
               
               <div className="button-wrapper">
@@ -149,11 +148,10 @@ function HomePage() {
               id="gamelist"
             />
             <div className="project-text-container">
-              <h2 className="project-title">TheGameList</h2>
+              <h3 className="project-title">TheGameList</h3>
 
               <p className="project-text">
-                A running game where you dodge the debris in space by
-                challenging the speed limits of your eyes.
+              An app where you can list your game in a database.
               </p>
               <div className="button-wrapper">
               <a href="">Live Demo</a>
