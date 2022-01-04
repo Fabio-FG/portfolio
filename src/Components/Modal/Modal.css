@@ -1,0 +1,27 @@
+body{
+    box-sizing: content-box;
+}
+
+.wrapper{
+    position: relative;
+    z-index:1;
+}
+
+
+.bg{
+    color: black;
+   background-color: cyan;
+   height: 70vh;
+   width: 50%;
+   position: absolute;
+   z-index: 3;
+   margin: auto;
+   display: flex;
+   margin-top: -10%;
+   justify-content: center;
+   text-align: center;
+   right: 0;
+   left: 0;
+   
+   
+}
