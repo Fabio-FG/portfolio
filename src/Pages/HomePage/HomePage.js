@@ -11,9 +11,9 @@ import nodeLogo from "../../images/nodejs.svg";
 import reactLogo from "../../images/reactlogo1.svg";
 import mongoLogo from "../../images/mongodb.svg";
 import { Link } from "react-router-dom";
-import hybridboxlogo from "../../images/hybridbox-logo.png";
-import atlaslogo from "../../images/atlas.png";
-import gamelistLogo from "../../images/gamelist-logo.png";
+import spacerunnerImage from "../../images/spacerunnersite.png";
+import thegamelistImage from "../../images/thegamelistsite.png";
+import hybridboxImage from "../../images/hybridboxsite.png"
 import handlebarsLogo from "../../images/handlebars.svg";
 
 import "../../Components/Navbar/Navbar.css";
@@ -109,7 +109,7 @@ function HomePage() {
        
         <div className="my-projects-wrapper">
           <div className="project-box">
-            <img src={atlaslogo} alt="project-logo" className="project-logo" />
+            <img src={spacerunnerImage} alt="project-logo" className="project-image" />
             <div className="project-text-container">
               <h3 className="project-title">Space Runner</h3>
 
@@ -131,9 +131,9 @@ function HomePage() {
 <hr className="hr-project"></hr>
           <div className="project-box">
             <img
-              src={hybridboxlogo}
+              src={hybridboxImage}
               alt="project-logo"
-              className="project-logo"
+              className="project-image"
             />
             <div className="project-text-container">
               <h3 className="project-title">HybridBox</h3>
@@ -153,9 +153,9 @@ function HomePage() {
           <hr className="hr-project"></hr>
           <div className="project-box">
             <img
-              src={gamelistLogo}
+              src={thegamelistImage}
               alt="project-logo"
-              className="project-logo"
+              className="project-image"
               id="gamelist"
             />
             <div className="project-text-container">
