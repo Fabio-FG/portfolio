@@ -1,9 +1,8 @@
 import "./HomePage.css";
+import "../../Components/Navbar/Navbar.css";
 import React from "react";
 import myPic from "../../images/fab.jpg";
 import bgImage from "../../images/Meteor.svg";
-import { useState } from "react";
-import Modal from "../../Components/Modal/Modal";
 import htmlLogo from "../../images/htmllogo.svg";
 import cssLogo from "../../images/css3.svg";
 import javascriptLogo from "../../images/javascriptlogo.svg";
@@ -16,15 +15,12 @@ import thegamelistImage from "../../images/thegamelistsite.png";
 import hybridboxImage from "../../images/hybridboxsite.png"
 import handlebarsLogo from "../../images/handlebars.svg";
 
-import "../../Components/Navbar/Navbar.css";
+import Footer from "../../Components/Footer/Footer";
 
 function HomePage() {
-  const [showModal, setShowModal] = useState(false);
+ 
 
-  const openModal = () => {
-    //toggling the previous value
-    setShowModal((prev) => !prev);
-  };
+  
 
   return (
     <div className="container">
@@ -38,7 +34,7 @@ function HomePage() {
               <small className="alpha-code">PT</small>
             </h2>
           </div>
-          <img src={bgImage} alt="bg-header" className="bg-image" />
+          {/* <img src={bgImage} alt="bg-header" className="bg-image" /> */}
         </section>
       </div>
       <section className="my-tech">
@@ -76,7 +72,7 @@ function HomePage() {
             <img
               src={handlebarsLogo}
               alt="handlebars"
-              className="language-logo"
+              className="language-logo" id="handlebars-logo"
             />
           </div>
         </div>
@@ -120,8 +116,7 @@ function HomePage() {
               <h3 className="project-title">Space Runner</h3>
 
               <p className="project-text">
-                A running game where you dodge the debris in space by
-                challenging the speed limits of your eyes.
+                This is a game built with Canvas, CSS and JavaScript. The main focus was the usage of JavaScript classes and methods with basic OOP knowledge.
               </p>
               <div className="button-wrapper">
                 <Link to="">Live Demo</Link>
@@ -129,10 +124,8 @@ function HomePage() {
                 <Link to="">Source Code</Link>
               </div>
             </div>
-            <button onClick={openModal} className="modal-btn">
-              Modal Btn
-            </button>
-            <Modal showModal={showModal} setShowModal={setShowModal} />
+           
+          
           </div>
 <hr className="hr-project"></hr>
           <div className="project-box">
@@ -145,8 +138,8 @@ function HomePage() {
               <h3 className="project-title">HybridBox</h3>
 
               <p className="project-text">
-                An app where you can customise streaming services and handpick
-                your favourite channels and streams.
+                This is a full stack app where you can customise streaming services and handpick
+                your favourite channels and streams. It was built with React, MongoDB, NodeJS and Express. 
               </p>
 
               <div className="button-wrapper">
@@ -168,7 +161,7 @@ function HomePage() {
               <h3 className="project-title">TheGameList</h3>
 
               <p className="project-text">
-                An app where you can list your game in a database.
+                An app where you can list your game in a database built with MongoDB, NodeJS, Express and Handlebars. The focus was in implementing CRUD. 
               </p>
               <div className="button-wrapper">
                 <Link to="">Live Demo</Link>
@@ -180,17 +173,9 @@ function HomePage() {
         </div>
       </section>
 
-      <footer>
-        <h2>Contact Me</h2>
-        <div className="footer-container">
-          <div className="footer-contacts">
-            <span>Github</span>
-            <span>Linkedin</span>
-            <span>Email</span>
-          </div>
-          {/* <ContactForm /> */}
-        </div>
-      </footer>
+     
+        <Footer/>
+     
     </div>
   );
 }

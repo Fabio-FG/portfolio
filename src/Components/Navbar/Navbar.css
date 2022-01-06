@@ -8,9 +8,9 @@
 
 .header {
   display: flex;
-  background-color: rgba(89, 89, 175, 0.342);
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(6.5px);
+  background-color: var(--secondary-bg-color);
+  /* backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(6.5px); */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   width: 100%;
