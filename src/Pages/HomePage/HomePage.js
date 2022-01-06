@@ -2,7 +2,7 @@ import "./HomePage.css";
 import "../../Components/Navbar/Navbar.css";
 import React from "react";
 import myPic from "../../images/fab.jpg";
-import bgImage from "../../images/Meteor.svg";
+/* import bgImage from "../../images/Meteor.svg"; */
 import htmlLogo from "../../images/htmllogo.svg";
 import cssLogo from "../../images/css3.svg";
 import javascriptLogo from "../../images/javascriptlogo.svg";
