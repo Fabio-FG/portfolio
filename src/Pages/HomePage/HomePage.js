@@ -26,6 +26,8 @@ function HomePage() {
     <div className="container">
       <div className="intro-wrapper">
         <section className="intro">
+        
+
           <img src={myPic} alt="my-intro-pic" className="my-pic"></img>
           <div className="intro-text">
             <h1>I am Fábio Guerreiro</h1>
@@ -33,7 +35,8 @@ function HomePage() {
               Jr. Fullstack Web Developer
               <small className="alpha-code">PT</small>
             </h2>
-          </div>
+        </div>
+        
           {/* <img src={bgImage} alt="bg-header" className="bg-image" /> */}
         </section>
       </div>

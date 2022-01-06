@@ -66,15 +66,23 @@
 .nav-toggle-label span {
   display: none;
 }
+@media screen and (min-width:992px){
 
+}
 
 /* for tablets , ipad */
 @media screen and (max-width: 992px) {
+  :root{
+    --main-bg-color: rgb(16, 16, 82);   
+    --secondary-bg-color: rgb(34, 32, 32);  
+    --main-text-color: rgb(225,225,225);
+  }
+
   .header {
-    background-color: var(--main-bg-color);
+    background-color:rgb(34, 32, 32);
     height: 70px;
     width: 100%;
-    position: absolute;
+    position: fixed;
    
   }
 
@@ -92,7 +100,7 @@
   }
 
   .nav-container {
-    background-color: var(--main-bg-color);
+    background-color: rgb(34, 32, 32);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -109,7 +117,7 @@
   }
 
   .nav-container a {
-    color: var(--main-text-color);
+    color: white;
     font-size: 1.7em;
     margin-right: 0%;
     padding: 0;
@@ -157,7 +165,7 @@
     height: 70%;
     display: flex;
     align-items: center;
-    background-color: var(--main-bg-color);
+    background-color: rgb(34, 32, 32);
     margin-right: 5%;
   }
 
@@ -186,10 +194,17 @@
     top: 8px;
   }
 }
+
 /* for phones */
 @media screen and (max-width: 768px) {
+  :root{
+    --main-bg-color: rgb(16, 16, 82);   
+    --secondary-bg-color: rgb(34, 32, 32);  
+    --main-text-color: rgb(225,225,225);
+  }
+
   .header {
-    background-color: var(--main-bg-color);
+    background-color:rgb(34, 32, 32);
     height: 70px;
     width: 100%;
     position: fixed;
@@ -210,7 +225,7 @@
   }
 
   .nav-container {
-    background-color: var(--main-bg-color);
+    background-color: rgb(34, 32, 32);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -227,7 +242,7 @@
   }
 
   .nav-container a {
-    color: var(--main-text-color);
+    color: white;
     font-size: 1.7em;
     margin-right: 0%;
     padding: 0;
@@ -275,7 +290,7 @@
     height: 70%;
     display: flex;
     align-items: center;
-    background-color: var(--main-bg-color);
+    background-color: rgb(34, 32, 32);
     margin-right: 5%;
   }
 
@@ -307,8 +322,14 @@
 
 /* smaller phones and smaller devices */
 @media screen and (max-width: 575px) {
+  :root{
+    --main-bg-color: rgb(16, 16, 82);   
+    --secondary-bg-color: rgb(34, 32, 32);  
+    --main-text-color: rgb(225,225,225);
+  }
+
   .header {
-    background-color: var(--secondary-bg-color);
+    background-color:rgb(34, 32, 32);
     height: 70px;
     width: 100%;
     position: fixed;
@@ -329,7 +350,7 @@
   }
 
   .nav-container {
-    background-color: var(--main-bg-color);
+    background-color: rgb(34, 32, 32);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -346,7 +367,7 @@
   }
 
   .nav-container a {
-    color: var(--main-text-color);
+    color: white;
     font-size: 1.7em;
     margin-right: 0%;
     padding: 0;
@@ -394,7 +415,7 @@
     height: 70%;
     display: flex;
     align-items: center;
-    background-color: var(--main-bg-color);
+    background-color: rgb(34, 32, 32);
     margin-right: 5%;
   }
 
