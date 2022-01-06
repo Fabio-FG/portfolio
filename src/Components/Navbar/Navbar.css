@@ -22,6 +22,11 @@
   position: fixed;
 }
 
+.my-name{
+  color: white;
+  text-decoration: none;
+}
+
 .nav-container {
   flex: 50%;
   display: flex;
@@ -86,6 +91,10 @@
    
   }
 
+  .my-name{
+    color: white;
+    text-decoration: none;
+  }
   .logo {
     flex: 50%;
     display: flex;
@@ -211,6 +220,10 @@
    
   }
 
+  .my-name{
+    color: white;
+    text-decoration: none;
+  }
   .logo {
     flex: 50%;
     display: flex;
@@ -334,6 +347,11 @@
     width: 100%;
     position: fixed;
    
+  }
+
+  .my-name{
+    color: white;
+    text-decoration: none;
   }
 
   .logo {

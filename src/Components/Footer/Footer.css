@@ -32,3 +32,40 @@ footer {
   #github-logo{
     filter: invert();
   }
+
+  @media screen and (max-width: 768px){
+    footer {
+      background-color: black;
+      color: var(--secondary-text-color);
+    }
+    
+    footer h2 {
+      text-align: center;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .footer-contacts {
+      margin: auto;
+      padding-top: 2%;
+      margin-bottom: 6%;
+    }
+    
+    .footer-contacts span {
+      margin: 30px;
+    }
+    
+    
+    /* footer contacts style */
+    
+    #github-logo{
+      filter: invert();
+    }
+
+
+  }

@@ -11,9 +11,9 @@ function Footer() {
             <h2>Contact Me</h2>
         <div className="footer-container">
           <div className="footer-contacts">
-            <span><img src={githubLogo} alt="github-logo" id="github-logo"/></span>
-            <span><img src={linkedinLogo} alt="github-logo" id="github-logo"/></span>
-            <span><img src={gmailLogo} alt="github-logo" id="github-logo"/></span>
+            <a href="https://github.com/Fabio-FG" target="_blank" rel="noreferrer"><span><img src={githubLogo} alt="github-logo" id="github-logo"/></span></a>
+            <a href="https://www.linkedin.com/in/fabiofguerreiro/" target="_blank" rel="noreferrer"><span><img src={linkedinLogo} alt="github-logo" id="github-logo"/></span></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=someone@gmail.com" target="_blank" rel="noreferrer"><span><img src={gmailLogo} alt="github-logo" id="github-logo"/></span></a>
           </div>
           
         </div>
