@@ -12,10 +12,13 @@ const ScrollToTopButton = (props) => {
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 300) {
         setShowButton(true);
+      
       } else {
         setShowButton(false);
       }
-    });
+    }
+    
+    );
   }, []);
 
   //scrolling to the top function
