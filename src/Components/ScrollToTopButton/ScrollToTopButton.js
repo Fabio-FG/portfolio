@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import './ScrollToTopButton.css'
-import arrowUp from '../../images/arrow-up.svg'
+import "./ScrollToTopButton.css";
+import arrowUp from "../../images/arrow-up.svg";
 
 const ScrollToTopButton = (props) => {
   //set the state for when the button starts to appear
@@ -10,16 +10,16 @@ const ScrollToTopButton = (props) => {
   //useEffect to trigger the method
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
+      if (window.pageYOffset > 2000) {
         setShowButton(true);
-      
       } else {
         setShowButton(false);
       }
-    }
-    
-    );
+    });
   }, []);
+
+
+  
 
   //scrolling to the top function
   const scrollUp = () => {
@@ -31,9 +31,10 @@ const ScrollToTopButton = (props) => {
 
   return (
     <>
+      {}
       {showButton && (
         <button onClick={scrollUp} className="to-Top">
-          <img src={arrowUp} alt="arrow-up" className="arrow-up"/>
+          <img src={arrowUp} alt="arrow-up" className="arrow-up" />
         </button>
       )}
     </>

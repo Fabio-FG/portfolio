@@ -24,7 +24,7 @@ function Navbar() {
         </label>
         
         <div className="logo">
-        <h1><Link to="/" className="my-name">Fábio Guerreiro</Link></h1>
+        <h1><Link to="/" className="my-name">F G</Link></h1>
         </div>
 
         <nav className="nav-container">
