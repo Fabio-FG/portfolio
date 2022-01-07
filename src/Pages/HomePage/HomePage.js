@@ -13,7 +13,7 @@ import spacerunnerImage from "../../images/spacerunnersite.png";
 import thegamelistImage from "../../images/thegamelistsite.png";
 import hybridboxImage from "../../images/hybridboxsite.png"
 import handlebarsLogo from "../../images/handlebars.svg";
-import ScrollToTopButton from "../../Components/ScrollToTopButton";
+import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton";
 
 import Footer from "../../Components/Footer/Footer";
 
@@ -23,7 +23,9 @@ function HomePage() {
   
 
   return (
-    <>
+    <div>
+
+
 
     <ScrollToTopButton />
     <div className="container">
@@ -183,7 +185,7 @@ function HomePage() {
         <Footer />
      
     </div>
-    </>
+    </div>
   );
 }
 
