@@ -9,7 +9,7 @@ function Footer() {
     return ( 
         <footer>
             <h2>Contact Me</h2>
-        <div className="footer-container">
+        <div className="footer-container" id="contact-me">
           <div className="footer-contacts">
             <a href="https://github.com/Fabio-FG" target="_blank" rel="noreferrer"><span><img src={githubLogo} alt="github-logo" id="github-logo"/></span></a>
             <a href="https://www.linkedin.com/in/fabiofguerreiro/" target="_blank" rel="noreferrer"><span><img src={linkedinLogo} alt="github-logo" id="github-logo"/></span></a>

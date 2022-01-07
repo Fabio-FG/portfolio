@@ -1,8 +1,18 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 function Navbar() {
+
+  //useEffect for the scroll 
+  useEffect(() => { 
+  let url = window.location.href.split("/");
+  let target = url[url.length - 1].toLowerCase();
+  let element = document.getElementById(target);
+  element && element.scrollIntoView({ behavior: "smooth", block: "start" });
+}, []);
+
   return (
     <div className="container">
       {/* this should be a header */}
@@ -20,7 +30,7 @@ function Navbar() {
         <nav className="nav-container">
           <a href="#about-me">About me</a>
           <a href="#projects">Projects</a>
-          <Link to="/contact-me">Contacts</Link>
+          <a href="#contact-me">Contacts</a>
         </nav>
       </header>
     </div>

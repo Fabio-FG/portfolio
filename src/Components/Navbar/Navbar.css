@@ -72,9 +72,7 @@
 .nav-toggle-label span {
   display: none;
 }
-@media screen and (min-width:992px){
 
-}
 
 /* for tablets , ipad */
 @media screen and (max-width: 992px) {

@@ -9,7 +9,6 @@ import javascriptLogo from "../../images/javascriptlogo.svg";
 import nodeLogo from "../../images/nodejs.svg";
 import reactLogo from "../../images/reactlogo1.svg";
 import mongoLogo from "../../images/mongodb.svg";
-import { Link } from "react-router-dom";
 import spacerunnerImage from "../../images/spacerunnersite.png";
 import thegamelistImage from "../../images/thegamelistsite.png";
 import hybridboxImage from "../../images/hybridboxsite.png"
@@ -122,9 +121,9 @@ function HomePage() {
                 This is a game built with Canvas, CSS and JavaScript. The main focus was the usage of JavaScript classes and methods with basic OOP knowledge.
               </p>
               <div className="button-wrapper">
-                <Link to="">Live Demo</Link>
+                <a href="https://spacerunner-thegame.netlify.app/" target="_blank" rel="noreferrer">Live Demo</a>
 
-                <Link to="">Source Code</Link>
+                <a href="https://github.com/Fabio-FG/SpaceRunner-game" target="_blank" rel="noreferrer">Source Code</a>
               </div>
             </div>
            
@@ -146,9 +145,9 @@ function HomePage() {
               </p>
 
               <div className="button-wrapper">
-                <Link to="">Live Demo</Link>
+                <a href="https://hybridbox.netlify.app/" target="_blank" rel="noreferrer">Live Demo</a>
 
-                <Link to="">Source Code</Link>
+                <a href="https://github.com/Fabio-FG/HybridBox-client" target="_blank" rel="noreferrer">Source Code</a>
               </div>
             </div>
           </div>
@@ -167,9 +166,9 @@ function HomePage() {
                 An app where you can list your game in a database built with MongoDB, NodeJS, Express and Handlebars. The focus was in implementing CRUD. 
               </p>
               <div className="button-wrapper">
-                <Link to="">Live Demo</Link>
+                <a href="https://gamelistproject.herokuapp.com/" target="_blank" rel="noreferrer">Live Demo</a>
 
-                <Link to="">Source Code</Link>
+                <a href="https://github.com/YFarias/Ironhacker---Project-2" target="_blank" rel="noreferrer">Source Code</a>
               </div>
             </div>
           </div>
@@ -177,7 +176,7 @@ function HomePage() {
       </section>
 
      
-        <Footer/>
+        <Footer />
      
     </div>
   );
