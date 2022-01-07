@@ -5,6 +5,14 @@
   font-weight: 400;
   }
 
+
+  @font-face {
+    font-family: "General Cinema GCC Letters Font";
+    src: local("General Cinema GCC Letters Font"),
+     url("../../fonts/GeneralCinemaGCCLettersFontBold.otf") format("opentype");
+    font-weight: 400;
+    }
+
 /* Global Variables */
 :root{
   --main-bg-color: rgb(16, 16, 82);   
@@ -32,7 +40,8 @@
 .my-name{
   color: white;
   text-decoration: none;
-  font-family: 'Lifelogo Easy', sans-serif;
+  font-family: 'General Cinema GCC Letters Font', sans-serif;
+                                                
 }
 
 .nav-container {
