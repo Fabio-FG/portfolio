@@ -12,8 +12,10 @@ const ScrollToTopButton = (props) => {
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 300) {
         setShowButton(true);
+        document.getElementById("my-btn").style.opacity = "1";
       } else {
         setShowButton(false);
+        document.getElementById("my-btn").style.opacity = "0";
       }
     });
   }, []);
@@ -33,7 +35,7 @@ const ScrollToTopButton = (props) => {
     <>
       {}
       {showButton && (
-        <button onClick={scrollUp} className="to-Top">
+        <button onClick={scrollUp} className="to-Top" id="my-btn">
           <img src={arrowUp} alt="arrow-up" className="arrow-up" />
         </button>
       )}

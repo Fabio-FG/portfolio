@@ -1,13 +1,25 @@
 .to-Top {
     position: fixed;
     bottom: 30px;
-    right: 20px;
+    margin-bottom: 12%;
+    right: 30px;
+    animation: blink 1s infinite;
     font-size: 1.5em;
     border: none;
     cursor: pointer;
     background-color: transparent;
     z-index: 10;
+    
+    
   }
+
+
+  #my-btn{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+
   
   
   

@@ -14,11 +14,16 @@ import thegamelistImage from "../../images/thegamelistsite.png";
 import hybridboxImage from "../../images/hybridboxsite.png"
 import handlebarsLogo from "../../images/handlebars.svg";
 import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton";
+import { useLayoutEffect } from "react";
 
 import Footer from "../../Components/Footer/Footer";
 
 function HomePage() {
- 
+
+  //hook to restart the page on the top.
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
 
   
 
