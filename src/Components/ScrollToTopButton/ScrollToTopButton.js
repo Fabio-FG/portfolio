@@ -10,7 +10,7 @@ const ScrollToTopButton = (props) => {
   //useEffect to trigger the method
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 2000) {
+      if (window.pageYOffset > 300) {
         setShowButton(true);
       } else {
         setShowButton(false);
