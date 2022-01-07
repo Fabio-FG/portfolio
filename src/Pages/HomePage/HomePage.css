@@ -265,16 +265,17 @@ hr{
   width: 20vw;
   height: 14vw;
   margin: auto;
-  opacity: .8;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  filter: grayscale(100%);
   padding: 20px;
   margin-right: 0;
+  transition: .5s;
  
 }
 
 .project-image:hover {
   opacity: 1;
+  filter: none;
+  transition: .3s;
 }
 
 .hr-project{
