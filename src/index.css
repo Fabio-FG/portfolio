@@ -1,18 +1,10 @@
-@font-face {
-  font-family: "Share-TechMono";
-  src: local("Share-TechMono"),
-   url("./fonts/ShareTechMono.otf") format("onetype");
-  font-weight: 400;
-  }
-
-
 html{
   scroll-behavior:smooth;
 }
 
-
 body {
   margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
