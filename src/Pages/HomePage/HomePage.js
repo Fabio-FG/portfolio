@@ -1,8 +1,8 @@
 import "./HomePage.css";
 import "../../Components/Navbar/Navbar.css";
-import React from "react";
+import { useLayoutEffect } from "react";
+import AboutMeText from "../../Components/AboutMeText/AboutMeText";
 import myPic from "../../images/fab.jpg";
-/* import bgImage from "../../images/Meteor.svg"; */
 import htmlLogo from "../../images/htmllogo.svg";
 import cssLogo from "../../images/css3.svg";
 import javascriptLogo from "../../images/javascriptlogo.svg";
@@ -14,9 +14,6 @@ import thegamelistImage from "../../images/thegamelistsite.png";
 import hybridboxImage from "../../images/hybridboxsite.png";
 import handlebarsLogo from "../../images/handlebars.svg";
 import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton";
-import { useLayoutEffect } from "react";
-import AboutMeText from "../../Components/AboutMeText/AboutMeText";
-
 import Footer from "../../Components/Footer/Footer";
 
 function HomePage() {
