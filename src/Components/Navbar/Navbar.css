@@ -40,6 +40,7 @@
   color: white;
   text-decoration: none;
   font-family: "General Cinema GCC Letters Font", sans-serif;
+  
 }
 
 .nav-container {
@@ -52,7 +53,7 @@
 
 .nav-container a {
   color: white;
-  font-size: 1.3em;
+  font-size: 1.2rem;
   margin-right: 10%;
   padding: 0;
   text-decoration: none;

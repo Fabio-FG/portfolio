@@ -17,6 +17,7 @@
   #my-btn{
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    
   }
 
 
@@ -24,7 +25,7 @@
   
   
   .arrow-up {
-    filter: invert(52%) sepia(0%) saturate(0%) hue-rotate(289deg) brightness(96%) contrast(93%);
+    filter: invert(50%) sepia(53%) saturate(577%) hue-rotate(150deg) brightness(92%) contrast(89%);
     height: 40px;
     transition-duration: 0.4s;
   }
@@ -41,7 +42,7 @@
       bottom: 30px;
       right: 20px;
       font-size: 1.5em;
-      color: rgb(155, 150, 151);
+      color: rgb(49, 150, 187);
       cursor: pointer;
       
       background-color: transparent;

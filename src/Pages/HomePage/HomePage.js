@@ -15,6 +15,8 @@ import hybridboxImage from "../../images/hybridboxsite.png";
 import handlebarsLogo from "../../images/handlebars.svg";
 import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton";
 import Footer from "../../Components/Footer/Footer";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function HomePage() {
   //hook to restart the page on the top.
@@ -44,7 +46,7 @@ function HomePage() {
         </div>
         <section className="my-tech">
           <h2>My Tech Stack </h2>
-          <div className="tech-container">
+          <div  className="tech-container">
             <div className="tech-box">
               <img src={htmlLogo} alt="html" className="language-logo" />
             </div>
@@ -87,7 +89,7 @@ function HomePage() {
         <article className="about-me" id="about-me">
           <h2>About me</h2>
           <div className="about-me-wrapper">
-            <div className="about-me-text">
+            <div className="about-me-text" data-aos="fade-up" data-aos-easing="ease-in-out"  data-aos-duration="1400">
               <AboutMeText />
             </div>
           </div>
@@ -96,14 +98,15 @@ function HomePage() {
         <section className="my-projects" id="projects">
           <h2 className="myprojects-title">My Projects</h2>
 
-          <div className="my-projects-wrapper">
+          <div className="my-projects-wrapper" >
             <div className="project-box">
               <img
                 src={spacerunnerImage}
                 alt="project-logo"
                 className="project-image"
+                
               />
-              <div className="project-text-container">
+              <div className="project-text-container" >
                 <h3 className="project-title">Space Runner</h3>
 
                 <p className="project-text">
