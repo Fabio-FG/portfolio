@@ -15,7 +15,7 @@ import hybridboxImage from "../../images/hybridboxsite.png";
 import handlebarsLogo from "../../images/handlebars.svg";
 import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton";
 import Footer from "../../Components/Footer/Footer";
-import AOS from 'aos';
+/* import AOS from 'aos'; */
 import 'aos/dist/aos.css';
 
 function HomePage() {
@@ -26,7 +26,7 @@ function HomePage() {
 
   return (
     <div>
-      <ScrollToTopButton />
+      
       <div className="container">
       
         <div className="intro-wrapper">
@@ -205,7 +205,7 @@ function HomePage() {
             </div>
           </div>
         </section>
-
+        <ScrollToTopButton />
         <Footer />
       </div>
     </div>
