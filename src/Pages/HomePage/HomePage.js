@@ -15,8 +15,9 @@ import hybridboxImage from "../../images/hybridboxsite.png";
 import handlebarsLogo from "../../images/handlebars.svg";
 import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton";
 import Footer from "../../Components/Footer/Footer";
+import github from "../../images/github.svg"
 /* import AOS from 'aos'; */
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 
 function HomePage() {
   //hook to restart the page on the top.
@@ -26,15 +27,13 @@ function HomePage() {
 
   return (
     <div>
-      
       <div className="container">
-      
         <div className="intro-wrapper">
           <section className="intro">
             <img src={myPic} alt="my-intro-pic" className="my-pic"></img>
             <div className="intro-text">
-                <h1>I am Fábio Guerreiro</h1>
-              
+              <h1>I am Fábio Guerreiro</h1>
+
               <h2>
                 Jr. Fullstack Web Developer
                 <small className="alpha-code">PT</small>
@@ -46,7 +45,7 @@ function HomePage() {
         </div>
         <section className="my-tech">
           <h2>My Tech Stack </h2>
-          <div  className="tech-container">
+          <div className="tech-container">
             <div className="tech-box">
               <img src={htmlLogo} alt="html" className="language-logo" />
             </div>
@@ -89,7 +88,12 @@ function HomePage() {
         <article className="about-me" id="about-me">
           <h2>About me</h2>
           <div className="about-me-wrapper">
-            <div className="about-me-text" data-aos="fade-up" data-aos-easing="ease-in-out"  data-aos-duration="1400">
+            <div
+              className="about-me-text"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1400"
+            >
               <AboutMeText />
             </div>
           </div>
@@ -98,50 +102,74 @@ function HomePage() {
         <section className="my-projects" id="projects">
           <h2 className="myprojects-title">My Projects</h2>
 
-          <div className="my-projects-wrapper" >
+          <div className="my-projects-wrapper">
             <div className="project-box">
-              <img
-                src={thegamelistImage}
-                alt="project-logo"
-                className="project-image"
-                id="gamelist"
-              />
+              <div className="image-container">
+                <img
+                  src={thegamelistImage}
+                  alt="project-logo"
+                  className="project-image"
+                  id="gamelist"
+                />
+                <div className="overlay"></div>
+                <div className="hover-btn">
+                  <a href="google.com" alt="project">
+                   Live Demo
+                  </a>
+                </div>
+              </div>
               <div className="project-text-container">
+              <div className="project-title-wrapper">
+
                 <h3 className="project-title">TheGameList</h3>
+                <a
+                    href="https://gamelistproject.herokuapp.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={github} alt="github-repo"/>
+                  </a>
+              </div>
 
                 <p className="project-text">
                   An app where you can list your game in a database built with
                   MongoDB, NodeJS, Express and Handlebars. The focus was in
                   implementing CRUD.
                 </p>
-                <div className="button-wrapper">
-                  <a
-                    href="https://gamelistproject.herokuapp.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Demo
-                  </a>
+                
+                  
 
-                  <a
-                    href="https://github.com/YFarias/Ironhacker---Project-2"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Code
-                  </a>
-                </div>
+                  
               </div>
             </div>
             <hr className="hr-project"></hr>
             <div className="project-box">
-              <img
-                src={hybridboxImage}
-                alt="project-logo"
-                className="project-image"
-              />
+              <div className="image-container">
+                <img
+                  src={hybridboxImage}
+                  alt="project-logo"
+                  className="project-image"
+                  id="gamelist"
+                />
+                <div className="overlay"></div>
+                <div className="hover-btn">
+                  <a href="google.com" alt="project">
+                    Live Demo
+                  </a>
+                </div>
+              </div>
               <div className="project-text-container">
+              <div className="project-title-wrapper">
+
                 <h3 className="project-title">HybridBox</h3>
+                <a
+                    href="https://hybridbox.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={github} alt="github-repo"/>
+                  </a>
+              </div>
 
                 <p className="project-text">
                   This is a full stack app where you can customise streaming
@@ -149,61 +177,48 @@ function HomePage() {
                   was built with React, MongoDB, NodeJS and Express.
                 </p>
 
-                <div className="button-wrapper">
-                  <a
-                    href="https://hybridbox.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Demo
-                  </a>
-
-                  <a
-                    href="https://github.com/Fabio-FG/HybridBox-client"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Code
-                  </a>
-                </div>
+                
               </div>
             </div>
             <hr className="hr-project"></hr>
             <div className="project-box">
-              <img
-                src={spacerunnerImage}
-                alt="project-logo"
-                className="project-image"
-                
-              />
-              <div className="project-text-container" >
+              <div className="image-container">
+                <img
+                  src={spacerunnerImage}
+                  alt="project-logo"
+                  className="project-image"
+                  id="gamelist"
+                />
+                <div className="overlay"></div>
+                <div className="hover-btn">
+                  <a href="https://spacerunner-thegame.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer" alt="project">
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+              <div className="project-text-container">
+              <div className="project-title-wrapper">
                 <h3 className="project-title">Space Runner</h3>
+                
+                <a
+                    href="https://github.com/Fabio-FG/SpaceRunner-game"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={github} alt="github-repo"/>
+                  </a>
+              </div>
 
                 <p className="project-text">
                   This is a game built with Canvas, CSS and JavaScript. The main
                   focus was the usage of JavaScript classes and methods with
                   basic OOP knowledge.
                 </p>
-                <div className="button-wrapper">
-                  <a
-                    href="https://spacerunner-thegame.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Demo
-                  </a>
-
-                  <a
-                    href="https://github.com/Fabio-FG/SpaceRunner-game"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Code
-                  </a>
-                </div>
+               
               </div>
             </div>
-            
           </div>
         </section>
         <ScrollToTopButton />
