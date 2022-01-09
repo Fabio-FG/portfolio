@@ -1,14 +1,6 @@
-@import url("http://fonts.cdnfonts.com/css/sf-mono");
-@import url("http://fonts.cdnfonts.com/css/thegoodmonolith");
-@import url("http://fonts.cdnfonts.com/css/freemono");
-@import url("http://fonts.cdnfonts.com/css/tisa-sans-pro");
 
-@font-face {
-  font-family: "Share-TechMono";
-  src: local("Share-TechMono"),
-    url("../../fonts/ShareTechMono.otf") format("onetype");
-  font-weight: 400;
-}
+
+
 
 @media screen and (min-width: 768px) {
   /* Global Variables */
@@ -26,7 +18,7 @@
   * {
     margin: 0;
     padding: 0;
-    font-family: "thegoodmonolith", sans-serif;
+    font-family: 'Oxygen', sans-serif;
     box-sizing: border-box;
   }
 
@@ -46,11 +38,7 @@
     position: relative;
     display: flex;
     background-color: rgb(49, 150, 187);
-    
   }
-
-  
-  
 
   .intro-text {
     position: absolute;
@@ -59,9 +47,7 @@
     width: 100%;
     text-align: center;
     margin-top: 22%;
-    
   }
-
 
   .my-pic {
     position: absolute;
@@ -73,10 +59,7 @@
     width: 12vw;
     height: 12vw;
     border-radius: 50%;
-    
   }
-
-  
 
   .intro h1 {
     font-size: 2.8em;
@@ -86,57 +69,50 @@
     position: relative;
     white-space: nowrap;
     width: 9.8em;
-    text-align:center;
+    text-align: center;
     margin: auto;
-    font-family: "tisa-sans-pro", sans-serif;
   }
 
   /* Typing effect using before and after and keyframes */
 
   .intro h1::before,
-  .intro h1::after{
-    content:'';
+  .intro h1::after {
+    content: "";
     position: absolute;
     inset: 0;
-    
   }
 
-  .intro h1::before{
+  .intro h1::before {
     animation: typewriter 4s 1s steps(25) forwards;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: name duration timing-function delay iteration-count direction
+      fill-mode;
     background-color: rgb(49, 150, 187);
-    
   }
 
-  .intro h1::after{
+  .intro h1::after {
     width: 0.1em;
     opacity: 0;
     background-color: #fff;
     animation: typewriter 4s 1s steps(25) forwards, blinker 800ms ease infinite;
-
   }
 
   @keyframes typewriter {
-    to{
+    to {
       left: 100%;
     }
   }
 
-  @keyframes blinker{
-    to{
+  @keyframes blinker {
+    to {
       opacity: 50%;
     }
   }
-
-
-
 
   .intro h2 {
     font-size: 1.4em;
     margin-top: 5px;
     margin-bottom: 3%;
     color: var(--secondary-text-color);
-    font-family: "tisa-sans-pro", sans-serif;
   }
 
   /* .bg-image{
@@ -170,7 +146,6 @@
     margin-bottom: 2%;
     font-size: 2.2em;
     color: var(--main-text-color);
-    font-family: "tisa-sans-pro", sans-serif;
   }
 
   #handlebars-logo {
@@ -232,7 +207,6 @@
     font-size: 2.2em;
     margin-top: 6%;
     margin-bottom: 2%;
-    font-family: "tisa-sans-pro", sans-serif;
   }
 
   .about-me-wrapper {
@@ -252,7 +226,7 @@
 
   /* Section 4 - projects section  */
   .my-projects {
-    background-color: rgb(205, 236, 247);
+    background-color: #cdecf7;
     /* border-radius: 55% 55% 0% 0%/5% 5% 15% 15%; */
     color: var(--main-text-color);
     display: flex;
@@ -266,7 +240,7 @@
     margin-bottom: 2%;
     /*  text-decoration: underline;
   text-underline-offset: 13px; */
-  font-family: "tisa-sans-pro", sans-serif;
+    font-family: "tisa-sans-pro", sans-serif;
   }
 
   .my-projects h3 {
@@ -291,7 +265,6 @@
     flex-direction: row;
     width: 80%;
     flex-wrap: wrap;
-    
   }
 
   .project-text-container {
@@ -351,7 +324,6 @@
     border: hidden;
     margin-bottom: 5%;
     transition: 0.3s;
-   
   }
 
   .button-wrapper a:hover {
