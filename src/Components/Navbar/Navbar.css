@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "Lifelogo Easy";
   src: local("Lifelogo Easy"),
@@ -24,8 +25,7 @@
   background-color: var(--secondary-bg-color);
   /* backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(6.5px); */
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "thegoodmonolith", "sans-serif";
   width: 100%;
   color: var(--main-text-color);
   top: 0;
