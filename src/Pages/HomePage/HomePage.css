@@ -26,7 +26,7 @@
   * {
     margin: 0;
     padding: 0;
-    font-family: "Tisa Sans Pro", sans-serif;
+    font-family: "thegoodmonolith", sans-serif;
     box-sizing: border-box;
   }
 
@@ -197,8 +197,6 @@
   .language-logo {
     width: 50px;
     height: 50px;
-    filter: opacity(80%);
-
     transition: 0.4s;
   }
 
@@ -293,6 +291,7 @@
     flex-direction: row;
     width: 80%;
     flex-wrap: wrap;
+    
   }
 
   .project-text-container {
@@ -311,7 +310,7 @@
     height: 14vw;
     margin: auto;
     margin-top: 0;
-    filter: grayscale(100%) blur(1px);
+    /* filter: grayscale(100%) blur(1px); */
     padding: 5px;
     margin-right: 0;
     transition: 0.7s;
@@ -342,7 +341,7 @@
   }
 
   .button-wrapper a {
-    margin: 5px;
+    margin-right: 18px;
     background-color: var(--secondary-bg-color);
     color: var(--secondary-text-color);
     text-decoration: none;
@@ -352,11 +351,12 @@
     border: hidden;
     margin-bottom: 5%;
     transition: 0.3s;
+   
   }
 
   .button-wrapper a:hover {
     background-color: rgb(49, 150, 187);
-    color: var(--main-text-color);
+    color: var(--secondary-text-color);
     transition: 0.5s;
   }
 

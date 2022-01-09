@@ -101,34 +101,34 @@ function HomePage() {
           <div className="my-projects-wrapper" >
             <div className="project-box">
               <img
-                src={spacerunnerImage}
+                src={thegamelistImage}
                 alt="project-logo"
                 className="project-image"
-                
+                id="gamelist"
               />
-              <div className="project-text-container" >
-                <h3 className="project-title">Space Runner</h3>
+              <div className="project-text-container">
+                <h3 className="project-title">TheGameList</h3>
 
                 <p className="project-text">
-                  This is a game built with Canvas, CSS and JavaScript. The main
-                  focus was the usage of JavaScript classes and methods with
-                  basic OOP knowledge.
+                  An app where you can list your game in a database built with
+                  MongoDB, NodeJS, Express and Handlebars. The focus was in
+                  implementing CRUD.
                 </p>
                 <div className="button-wrapper">
                   <a
-                    href="https://spacerunner-thegame.netlify.app/"
+                    href="https://gamelistproject.herokuapp.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Live Demo
+                    Demo
                   </a>
 
                   <a
-                    href="https://github.com/Fabio-FG/SpaceRunner-game"
+                    href="https://github.com/YFarias/Ironhacker---Project-2"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Source Code
+                    Code
                   </a>
                 </div>
               </div>
@@ -155,7 +155,7 @@ function HomePage() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Live Demo
+                    Demo
                   </a>
 
                   <a
@@ -163,7 +163,7 @@ function HomePage() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Source Code
+                    Code
                   </a>
                 </div>
               </div>
@@ -171,38 +171,39 @@ function HomePage() {
             <hr className="hr-project"></hr>
             <div className="project-box">
               <img
-                src={thegamelistImage}
+                src={spacerunnerImage}
                 alt="project-logo"
                 className="project-image"
-                id="gamelist"
+                
               />
-              <div className="project-text-container">
-                <h3 className="project-title">TheGameList</h3>
+              <div className="project-text-container" >
+                <h3 className="project-title">Space Runner</h3>
 
                 <p className="project-text">
-                  An app where you can list your game in a database built with
-                  MongoDB, NodeJS, Express and Handlebars. The focus was in
-                  implementing CRUD.
+                  This is a game built with Canvas, CSS and JavaScript. The main
+                  focus was the usage of JavaScript classes and methods with
+                  basic OOP knowledge.
                 </p>
                 <div className="button-wrapper">
                   <a
-                    href="https://gamelistproject.herokuapp.com/"
+                    href="https://spacerunner-thegame.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Live Demo
+                    Demo
                   </a>
 
                   <a
-                    href="https://github.com/YFarias/Ironhacker---Project-2"
+                    href="https://github.com/Fabio-FG/SpaceRunner-game"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Source Code
+                    Code
                   </a>
                 </div>
               </div>
             </div>
+            
           </div>
         </section>
         <ScrollToTopButton />
