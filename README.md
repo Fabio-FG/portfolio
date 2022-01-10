@@ -1,7 +1,7 @@
 <h1>My Portfolio</h1>
 
 
-<h2>Live Demo:<a href="https://fabioguerreiro.netlify.app/" target="blank_">Portfolio</a></h2>
+<h2>Live Demo:<a href="https://fabioguerreiro.netlify.app/" target="_blank" alt="portfolio-link">Portfolio</a></h2>
 <br></br>
 
 <h2>Description</h2>
