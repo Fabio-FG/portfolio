@@ -282,7 +282,11 @@
   .project-title-wrapper a{
     margin-left: 15px;
     margin-top: 5px;
-    
+    transition: all 0.2s ease;
+  }
+
+  .project-title-wrapper a:hover{
+    transform: scale(1.2);
     
   }
 

@@ -1,3 +1,6 @@
+import './AboutMeText.css';
+import myCV from '../../cv/FABIOGUERREIRO_webdevCVEN.pdf'
+
 function AboutMeText() {
   return (
     <>
@@ -30,6 +33,10 @@ function AboutMeText() {
       </p>
       I plan on learning and studying more about Algorithms and Data Structure.
       Learn SASS, TypeScript and C#.
+      <br></br>
+      <div className='cv-wrap'>
+      <a href={myCV} download className='cv-btn'>Download CV</a>
+      </div>
     </>
   );
 }

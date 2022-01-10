@@ -113,7 +113,8 @@ function HomePage() {
                 />
                 <div className="overlay"></div>
                 <div className="hover-btn">
-                  <a href="google.com" alt="project">
+                  <a href="https://gamelistproject.herokuapp.com/" alt="project" target="_blank"
+                    rel="noreferrer">
                    Live Demo
                   </a>
                 </div>
@@ -123,7 +124,7 @@ function HomePage() {
 
                 <h3 className="project-title">TheGameList</h3>
                 <a
-                    href="https://gamelistproject.herokuapp.com/"
+                    href="https://github.com/YFarias/Ironhacker---Project-2"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -153,7 +154,8 @@ function HomePage() {
                 />
                 <div className="overlay"></div>
                 <div className="hover-btn">
-                  <a href="google.com" alt="project">
+                  <a href="https://hybridbox.netlify.app/" alt="project" target="_blank"
+                    rel="noreferrer">
                     Live Demo
                   </a>
                 </div>
@@ -163,7 +165,7 @@ function HomePage() {
 
                 <h3 className="project-title">HybridBox</h3>
                 <a
-                    href="https://hybridbox.netlify.app/"
+                    href="https://github.com/Fabio-FG/HybridBox-client"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -193,7 +195,7 @@ function HomePage() {
                 <div className="hover-btn">
                   <a href="https://spacerunner-thegame.netlify.app/"
                     target="_blank"
-                    rel="noreferrer" alt="project">
+                    rel="noreferrer" alt="project" >
                     Live Demo
                   </a>
                 </div>

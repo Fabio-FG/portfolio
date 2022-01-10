@@ -35,12 +35,12 @@ footer {
   
   #github-logo{
     filter: invert();
-    transition: .4s;
+    transition: all 0.8s ease;
   }
 
   #github-logo:hover{
     transform: scale(1.5);
-    transition: .4s;
+    
   }
 
   @media screen and (max-width: 768px){
