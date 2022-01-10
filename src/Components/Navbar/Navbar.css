@@ -279,6 +279,7 @@
     transform: scale(1, 1);
     transition: 0.5s;
     position: absolute;
+    height: auto;
   }
 
   .nav-toggle:checked ~ nav a {
@@ -533,6 +534,7 @@
     transform: scale(1, 1);
     transition: 0.5s;
     position: absolute;
+    height: auto;
   }
 
   .nav-toggle:checked ~ nav a {
