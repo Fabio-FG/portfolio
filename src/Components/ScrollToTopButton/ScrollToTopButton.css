@@ -7,13 +7,8 @@
     cursor: pointer;
     background-color: transparent;
     z-index: 10;
-  
-    
-    
+   
   }
-
-
-
 
   #my-btn{
     opacity: 1;
@@ -21,10 +16,6 @@
     
   }
 
-
-  
-  
-  
   .arrow-up {
     filter: invert(50%) sepia(53%) saturate(577%) hue-rotate(150deg) brightness(92%) contrast(89%);
     height: 40px;
@@ -35,25 +26,59 @@
       transform: scale(1.1);
       transition-duration: 0.4s;
   }
-  
-  
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     .to-Top {
-      position: fixed;
-      bottom: 30px;
-      right: 20px;
+      position: absolute;
+      bottom: 215px;
+      right: 30px;
       font-size: 1.5em;
-      color: rgb(49, 150, 187);
+      border: none;
       cursor: pointer;
-      
       background-color: transparent;
+      z-index: 10;
+     
+    }
+  
+    #my-btn{
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+      
+    }
+  
+    .arrow-up {
+      filter: invert(50%) sepia(53%) saturate(577%) hue-rotate(150deg) brightness(92%) contrast(89%);
+      height: 40px;
+      transition-duration: 0.4s;
     }
     
+    .arrow-up:hover{
+        transform: scale(1.1);
+        transition-duration: 0.4s;
+    }
     
-    
+  }
+  
+  @media screen and (max-width: 415px) {
+    .to-Top {
+      position: absolute;
+      bottom: 140px;
+      right: 30px;
+      font-size: 1.5em;
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+      z-index: 10;
+     
+    }
+  
+    #my-btn{
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+      
+    }
+  
     .arrow-up {
-      filter: invert(21%) sepia(70%) saturate(4944%) hue-rotate(338deg)
-        brightness(86%) contrast(102%) opacity(70%);
+      filter: invert(50%) sepia(53%) saturate(577%) hue-rotate(150deg) brightness(92%) contrast(89%);
       height: 40px;
       transition-duration: 0.4s;
     }
