@@ -15,6 +15,7 @@ body {
   padding: 0;
   font-family: "Oxygen", sans-serif;
   box-sizing: border-box;
+  
 }
 
 .container {
@@ -417,7 +418,7 @@ hr {
   margin: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   /* Global Variables */
   :root {
     --main-bg-color: rgb(255, 255, 255);
@@ -446,7 +447,7 @@ hr {
   .intro {
     /* header */
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     object-fit: cover;
     border-radius: 0% 0% 55% 55%/0% 0% 15% 15%;
     position: relative;
@@ -460,7 +461,7 @@ hr {
     margin: auto;
     width: 100%;
     text-align: center;
-    margin-top: 85%;
+    margin-top: 50%;
   }
 
   .my-pic {
@@ -469,9 +470,9 @@ hr {
     left: 0;
     right: 0;
     z-index: 2;
-    margin-top: 35%;
-    width: 40vw;
-    height: 40vw;
+    margin-top: 15%;
+    width: 35vw;
+    height: 35vw;
     border-radius: 50%;
   }
 
@@ -755,6 +756,813 @@ hr {
     margin-bottom: 2%;
   }
 
+  .tech-used li {
+    list-style: none;
+    display: inline-flex;
+    margin: 10px;
+  }
+}
+
+
+
+@media screen and(max-width: 768px){
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .intro {
+    /* header */
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 0% 0% 55% 55%/0% 0% 15% 15%;
+    position: relative;
+    display: flex;
+    background-color: rgb(49, 150, 187);
+  }
+  
+  .intro-text {
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 25%;
+  }
+  
+  .my-pic {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin-top: 10%;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+  }
+  
+  .intro h1 {
+    font-size: 2.8em;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    color: var(--secondary-text-color);
+    position: relative;
+    white-space: nowrap;
+    width: 9.3em;
+    text-align: center;
+    margin: auto;
+  }
+  
+  /* Typing effect using before and after and keyframes */
+  
+  .intro h1::before,
+  .intro h1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+  
+  .intro h1::before {
+    animation: typewriter 4s 1s steps(25) forwards;
+    animation: name duration timing-function delay iteration-count direction
+      fill-mode;
+    background-color: rgb(49, 150, 187);
+  }
+  
+  .intro h1::after {
+    width: 0.1em;
+    opacity: 0;
+    background-color: #fff;
+    animation: typewriter 4s 1s steps(25) forwards, blinker 800ms ease infinite;
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blinker {
+    to {
+      opacity: 50%;
+    }
+  }
+  
+  .intro h2 {
+    font-size: 1.4em;
+    margin-top: 5px;
+    margin-bottom: 3%;
+    color: var(--secondary-text-color);
+  }
+  
+  /* .bg-image{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 0% 0% 55% 55%/0% 0% 15% 15%;
+    position: relative;
+    display: flex;
+  } */
+  
+  .alpha-code {
+    margin-left: 5px;
+    font-size: 0.5em;
+    color: var(--secondary-text-color);
+  }
+  
+  /* Section 2 */
+  
+  .my-tech {
+    background-color: var(--main-bg-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .my-tech h2 {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 2.2em;
+    color: var(--main-text-color);
+  }
+  
+  #handlebars-logo {
+    filter: invert(30%);
+  }
+  .tech-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .tech-box {
+    margin: 18px;
+    width: auto;
+    height: auto;
+    margin-bottom: 2%;
+  }
+  
+  .language-logo {
+    width: 50px;
+    height: 50px;
+    transition: 0.4s;
+  }
+  
+  .language-logo:hover {
+    filter: none;
+    transform: scale(1.1);
+    transition: 0.4s;
+  }
+  hr {
+    width: 15%;
+    margin: auto;
+    border-style: solid;
+    border-color: rgb(59, 58, 139);
+  }
+  .split {
+    display: flex;
+    width: 60%;
+    background-color: rgb(59, 58, 139);
+    height: 2px;
+    margin: auto;
+    border-bottom: 2px solid white;
+    margin-top: 5%;
+  }
+  
+  /* Section 3 - article about me */
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    margin-bottom: 5%;
+  }
+  
+  .about-me h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 6%;
+    margin-bottom: 2%;
+  }
+  
+  .about-me-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .about-me-text {
+    padding: 5px;
+    line-height: 30px;
+    width: 58%;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-bottom: 4%;
+  }
+  
+  /* Section 4 - projects section  */
+  .my-projects {
+    background-color: whitesmoke;
+    /* border-radius: 55% 55% 0% 0%/5% 5% 15% 15%; */
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .myprojects-title {
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    /*  text-decoration: underline;
+    text-underline-offset: 13px; */
+    font-family: "tisa-sans-pro", sans-serif;
+  }
+  
+  .my-projects h3 {
+    margin-bottom: 2%;
+    font-size: 1.8em;
+    color: rgb(49, 150, 187);
+    text-decoration: none;
+  }
+  .my-projects-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-box {
+    /* background-color: var(--secondary-bg-color); */
+    margin: auto;
+    margin-top: 5%;
+    left: 0;
+    right: 0;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project-title-wrapper {
+    display: flex;
+  }
+  
+  .project-title-wrapper a {
+    margin-left: 15px;
+    margin-top: 5px;
+    transition: all 0.2s ease;
+  }
+  
+  .project-title-wrapper a:hover {
+    transform: scale(1.2);
+  }
+  
+  .project-text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    margin-left: 2%;
+    padding-left: 2%;
+    font-size: 1.1rem;
+    align-items: left;
+    /* background: pink; */
+  }
+  
+  /* This is a container for the overlay effect only */
+  .image-container {
+    position: relative;
+    width: 20vw;
+    height: 14vw;
+    display: flex;
+    left: 0;
+    right: 0;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+  }
+  
+  .image-container:hover .overlay {
+    display: block;
+    background: rgba(139, 130, 130, 0.3);
+  }
+  
+  /* These are the image properties */
+  .project-image {
+    width: 20vw;
+    height: 14vw;
+    margin: auto;
+    margin-top: 0;
+    /* filter: grayscale(100%) blur(1px); */
+    padding: 5px;
+    margin-right: 0;
+    transition: 0.7s;
+    transition: all 1s;
+    box-shadow: 2px 2px 10px rgb(151, 145, 145);
+  }
+  
+  .project-image:hover {
+    opacity: 1;
+    filter: none;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  
+  .hover-btn {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 100px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+  
+  .hover-btn a {
+    width: 200px;
+    padding: 8px 30px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    z-index: 15;
+    text-decoration: none;
+    background-color: rgb(49, 150, 187);
+  }
+  
+  .image-container:hover .hover-btn {
+    opacity: 1;
+  }
+  .hr-project {
+    width: 60%;
+  }
+  
+  .project-text {
+    width: 90%;
+    margin-top: 1%;
+    line-height: 25px;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: auto;
+  }
+  
+  .button-wrapper a {
+    margin-right: 18px;
+    /* background-color: var(--secondary-bg-color); */
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px;
+    margin-top: 5%;
+    border: hidden;
+    margin-bottom: 5%;
+    transition: 0.3s;
+  }
+  
+  .button-wrapper a:hover {
+    background-color: rgb(49, 150, 187);
+    color: var(--secondary-text-color);
+    transition: 0.5s;
+  }
+  
+  .modal-btn {
+    width: 100px;
+    margin: auto;
+    margin-top: 5px;
+    display: none;
+  }
+  
+  .tech-used h3 {
+    margin-bottom: 5%;
+  }
+  .tech-used ul {
+    margin-bottom: 2%;
+  }
+  
+  .tech-used li {
+    list-style: none;
+    display: inline-flex;
+    margin: 10px;
+  }
+}
+
+
+@media screen and(max-width: 480px){
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .intro {
+    /* header */
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 0% 0% 55% 55%/0% 0% 15% 15%;
+    position: relative;
+    display: flex;
+    background-color: rgb(49, 150, 187);
+  }
+  
+  .intro-text {
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 25%;
+  }
+  
+  .my-pic {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin-top: 9%;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+  }
+  
+  .intro h1 {
+    font-size: 2.8em;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    color: var(--secondary-text-color);
+    position: relative;
+    white-space: nowrap;
+    width: 9.3em;
+    text-align: center;
+    margin: auto;
+  }
+  
+  /* Typing effect using before and after and keyframes */
+  
+  .intro h1::before,
+  .intro h1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+  
+  .intro h1::before {
+    animation: typewriter 4s 1s steps(25) forwards;
+    animation: name duration timing-function delay iteration-count direction
+      fill-mode;
+    background-color: rgb(49, 150, 187);
+  }
+  
+  .intro h1::after {
+    width: 0.1em;
+    opacity: 0;
+    background-color: #fff;
+    animation: typewriter 4s 1s steps(25) forwards, blinker 800ms ease infinite;
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blinker {
+    to {
+      opacity: 50%;
+    }
+  }
+  
+  .intro h2 {
+    font-size: 1.4em;
+    margin-top: 5px;
+    margin-bottom: 3%;
+    color: var(--secondary-text-color);
+  }
+  
+  /* .bg-image{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 0% 0% 55% 55%/0% 0% 15% 15%;
+    position: relative;
+    display: flex;
+  } */
+  
+  .alpha-code {
+    margin-left: 5px;
+    font-size: 0.5em;
+    color: var(--secondary-text-color);
+  }
+  
+  /* Section 2 */
+  
+  .my-tech {
+    background-color: var(--main-bg-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .my-tech h2 {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 2.2em;
+    color: var(--main-text-color);
+  }
+  
+  #handlebars-logo {
+    filter: invert(30%);
+  }
+  .tech-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .tech-box {
+    margin: 18px;
+    width: auto;
+    height: auto;
+    margin-bottom: 2%;
+  }
+  
+  .language-logo {
+    width: 50px;
+    height: 50px;
+    transition: 0.4s;
+  }
+  
+  .language-logo:hover {
+    filter: none;
+    transform: scale(1.1);
+    transition: 0.4s;
+  }
+  hr {
+    width: 15%;
+    margin: auto;
+    border-style: solid;
+    border-color: rgb(59, 58, 139);
+  }
+  .split {
+    display: flex;
+    width: 60%;
+    background-color: rgb(59, 58, 139);
+    height: 2px;
+    margin: auto;
+    border-bottom: 2px solid white;
+    margin-top: 5%;
+  }
+  
+  /* Section 3 - article about me */
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    margin-bottom: 5%;
+  }
+  
+  .about-me h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 6%;
+    margin-bottom: 2%;
+  }
+  
+  .about-me-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .about-me-text {
+    padding: 5px;
+    line-height: 30px;
+    width: 58%;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-bottom: 4%;
+  }
+  
+  /* Section 4 - projects section  */
+  .my-projects {
+    background-color: whitesmoke;
+    /* border-radius: 55% 55% 0% 0%/5% 5% 15% 15%; */
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .myprojects-title {
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    /*  text-decoration: underline;
+    text-underline-offset: 13px; */
+    font-family: "tisa-sans-pro", sans-serif;
+  }
+  
+  .my-projects h3 {
+    margin-bottom: 2%;
+    font-size: 1.8em;
+    color: rgb(49, 150, 187);
+    text-decoration: none;
+  }
+  .my-projects-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-box {
+    /* background-color: var(--secondary-bg-color); */
+    margin: auto;
+    margin-top: 5%;
+    left: 0;
+    right: 0;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project-title-wrapper {
+    display: flex;
+  }
+  
+  .project-title-wrapper a {
+    margin-left: 15px;
+    margin-top: 5px;
+    transition: all 0.2s ease;
+  }
+  
+  .project-title-wrapper a:hover {
+    transform: scale(1.2);
+  }
+  
+  .project-text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    margin-left: 2%;
+    padding-left: 2%;
+    font-size: 1.1rem;
+    align-items: left;
+    /* background: pink; */
+  }
+  
+  /* This is a container for the overlay effect only */
+  .image-container {
+    position: relative;
+    width: 20vw;
+    height: 14vw;
+    display: flex;
+    left: 0;
+    right: 0;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+  }
+  
+  .image-container:hover .overlay {
+    display: block;
+    background: rgba(139, 130, 130, 0.3);
+  }
+  
+  /* These are the image properties */
+  .project-image {
+    width: 20vw;
+    height: 14vw;
+    margin: auto;
+    margin-top: 0;
+    /* filter: grayscale(100%) blur(1px); */
+    padding: 5px;
+    margin-right: 0;
+    transition: 0.7s;
+    transition: all 1s;
+    box-shadow: 2px 2px 10px rgb(151, 145, 145);
+  }
+  
+  .project-image:hover {
+    opacity: 1;
+    filter: none;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  
+  .hover-btn {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 100px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+  
+  .hover-btn a {
+    width: 200px;
+    padding: 8px 30px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    z-index: 15;
+    text-decoration: none;
+    background-color: rgb(49, 150, 187);
+  }
+  
+  .image-container:hover .hover-btn {
+    opacity: 1;
+  }
+  .hr-project {
+    width: 60%;
+  }
+  
+  .project-text {
+    width: 90%;
+    margin-top: 1%;
+    line-height: 25px;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: auto;
+  }
+  
+  .button-wrapper a {
+    margin-right: 18px;
+    /* background-color: var(--secondary-bg-color); */
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px;
+    margin-top: 5%;
+    border: hidden;
+    margin-bottom: 5%;
+    transition: 0.3s;
+  }
+  
+  .button-wrapper a:hover {
+    background-color: rgb(49, 150, 187);
+    color: var(--secondary-text-color);
+    transition: 0.5s;
+  }
+  
+  .modal-btn {
+    width: 100px;
+    margin: auto;
+    margin-top: 5px;
+    display: none;
+  }
+  
+  .tech-used h3 {
+    margin-bottom: 5%;
+  }
+  .tech-used ul {
+    margin-bottom: 2%;
+  }
+  
   .tech-used li {
     list-style: none;
     display: inline-flex;
