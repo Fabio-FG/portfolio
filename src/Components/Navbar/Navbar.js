@@ -13,6 +13,12 @@ function Navbar() {
   element && element.scrollIntoView({ behavior: "smooth", block: "start" });
 }, []);
 
+
+//refreshing the page when clicking on the home button in the homepage.
+const refreshPage = () => {
+  window.location.reload();
+}
+
   return (
     <div className="container">
       {/* this should be a header */}
@@ -24,7 +30,7 @@ function Navbar() {
         </label>
         
         <div className="logo">
-        <h1><Link to="/" className="my-name">Fabio.G</Link></h1>
+        <h1><Link to="/" className="my-name" onClick={refreshPage}>Fabio.G</Link></h1>
         </div>
 
         <nav className="nav-container">
