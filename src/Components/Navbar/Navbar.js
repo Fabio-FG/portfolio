@@ -1,23 +1,11 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
-
 
 function Navbar() {
-
-  //useEffect for the scroll 
-  useEffect(() => { 
-  let url = window.location.href.split("/");
-  let target = url[url.length - 1].toLowerCase();
-  let element = document.getElementById(target);
-  element && element.scrollIntoView({ behavior: "smooth", block: "start" });
-}, []);
-
-
-//refreshing the page when clicking on the home button in the homepage.
-const refreshPage = () => {
-  window.location.reload();
-}
+  //refreshing the page when clicking on the home button in the homepage.
+  const refreshPage = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className="container">
@@ -25,12 +13,16 @@ const refreshPage = () => {
       <header className="header">
         <input type="checkbox" className="nav-toggle" id="nav-toggle" />
         <label for="nav-toggle" className="nav-toggle-label">
-        {/* Hamburguer using span */}
+          {/* Hamburguer using span */}
           <span></span>
         </label>
-        
+
         <div className="logo">
-        <h1><Link to="/" className="my-name" onClick={refreshPage}>Fabio.G</Link></h1>
+          <h1>
+            <Link to="/" className="my-name" onClick={refreshPage}>
+              Fabio.G
+            </Link>
+          </h1>
         </div>
 
         <nav className="nav-container">

@@ -15,7 +15,7 @@ import hybridboxImage from "../../images/hybridboxsite.png";
 import handlebarsLogo from "../../images/handlebars.svg";
 import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton";
 import Footer from "../../Components/Footer/Footer";
-import github from "../../images/github.svg"
+import github from "../../images/github.svg";
 /* import AOS from 'aos'; */
 import "aos/dist/aos.css";
 
@@ -24,8 +24,6 @@ function HomePage() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
-
-  
 
   return (
     <div>
@@ -115,34 +113,33 @@ function HomePage() {
                 />
                 <div className="overlay"></div>
                 <div className="hover-btn">
-                  <a href="https://gamelistproject.herokuapp.com/" alt="project" target="_blank"
-                    rel="noreferrer">
-                   Live Demo
+                  <a
+                    href="https://gamelistproject.herokuapp.com/"
+                    alt="project"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live Demo
                   </a>
                 </div>
               </div>
               <div className="project-text-container">
-              <div className="project-title-wrapper">
-
-                <h3 className="project-title">TheGameList</h3>
-                <a
+                <div className="project-title-wrapper">
+                  <h3 className="project-title">TheGameList</h3>
+                  <a
                     href="https://github.com/YFarias/Ironhacker---Project-2"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={github} alt="github-repo"/>
+                    <img src={github} alt="github-repo" />
                   </a>
-              </div>
+                </div>
 
                 <p className="project-text">
                   An app where you can list your game in a database built with
                   MongoDB, NodeJS, Express and Handlebars. The focus was in
                   implementing CRUD.
                 </p>
-                
-                  
-
-                  
               </div>
             </div>
             <hr className="hr-project"></hr>
@@ -156,32 +153,33 @@ function HomePage() {
                 />
                 <div className="overlay"></div>
                 <div className="hover-btn">
-                  <a href="https://hybridbox.netlify.app/" alt="project" target="_blank"
-                    rel="noreferrer">
+                  <a
+                    href="https://hybridbox.netlify.app/"
+                    alt="project"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Live Demo
                   </a>
                 </div>
               </div>
               <div className="project-text-container">
-              <div className="project-title-wrapper">
-
-                <h3 className="project-title">HybridBox</h3>
-                <a
+                <div className="project-title-wrapper">
+                  <h3 className="project-title">HybridBox</h3>
+                  <a
                     href="https://github.com/Fabio-FG/HybridBox-client"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={github} alt="github-repo"/>
+                    <img src={github} alt="github-repo" />
                   </a>
-              </div>
+                </div>
 
                 <p className="project-text">
                   This is a full stack app where you can customise streaming
                   services and handpick your favourite channels and streams. It
                   was built with React, MongoDB, NodeJS and Express.
                 </p>
-
-                
               </div>
             </div>
             <hr className="hr-project"></hr>
@@ -195,32 +193,34 @@ function HomePage() {
                 />
                 <div className="overlay"></div>
                 <div className="hover-btn">
-                  <a href="https://spacerunner-thegame.netlify.app/"
+                  <a
+                    href="https://spacerunner-thegame.netlify.app/"
                     target="_blank"
-                    rel="noreferrer" alt="project" >
+                    rel="noreferrer"
+                    alt="project"
+                  >
                     Live Demo
                   </a>
                 </div>
               </div>
               <div className="project-text-container">
-              <div className="project-title-wrapper">
-                <h3 className="project-title">Space Runner</h3>
-                
-                <a
+                <div className="project-title-wrapper">
+                  <h3 className="project-title">Space Runner</h3>
+
+                  <a
                     href="https://github.com/Fabio-FG/SpaceRunner-game"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={github} alt="github-repo"/>
+                    <img src={github} alt="github-repo" />
                   </a>
-              </div>
+                </div>
 
                 <p className="project-text">
                   This is a game built with Canvas, CSS and JavaScript. The main
                   focus was the usage of JavaScript classes and methods with
                   basic OOP knowledge.
                 </p>
-               
               </div>
             </div>
           </div>
