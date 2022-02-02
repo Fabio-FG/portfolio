@@ -11,6 +11,7 @@ import reactLogo from "../../images/reactlogo1.svg";
 import mongoLogo from "../../images/mongodb.svg";
 import spacerunnerImage from "../../images/spacerunnersite.png";
 import thegamelistImage from "../../images/thegamelistsite.png";
+import worldbikeImage from "../../images/worldbike.png";
 import hybridboxImage from "../../images/hybridboxsite.png";
 import handlebarsLogo from "../../images/handlebars.svg";
 import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton";
@@ -103,6 +104,45 @@ function HomePage() {
           <h2 className="myprojects-title">My Projects</h2>
 
           <div className="my-projects-wrapper">
+          <div className="project-box">
+              <div className="image-container">
+                <img
+                  src={worldbikeImage}
+                  alt="project-logo"
+                  className="project-image"
+                  id="gamelist"
+                />
+                <div className="overlay"></div>
+                <div className="hover-btn">
+                  <a
+                    href="https://worldbike-geolocation.netlify.app/"
+                    alt="project"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+              <div className="project-text-container">
+                <div className="project-title-wrapper">
+                  <h3 className="project-title">World Bike</h3>
+                  <a
+                    href="https://github.com/Fabio-FG/geolocation"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={github} alt="github-repo" />
+                  </a>
+                </div>
+
+                <p className="project-text">
+                  An app where you can search for bike networks and stations worldwide and see which ones are available. The main focus was handling API calls and fetching live data. Additionally, another main feature is that the app website is bilingual.
+                </p>
+              </div>
+            </div>
+            <hr className="hr-project"></hr>
+
             <div className="project-box">
               <div className="image-container">
                 <img
