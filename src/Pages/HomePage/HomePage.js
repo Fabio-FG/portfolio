@@ -39,12 +39,13 @@ function HomePage() {
                 Jr. Fullstack Web Developer
                 <small className="alpha-code">PT</small>
               </h2>
+          <a href="#tech-stack" id="arrow-down">down</a>
             </div>
 
             {/* <img src={bgImage} alt="bg-header" className="bg-image" /> */}
           </section>
         </div>
-        <section className="my-tech">
+        <section className="my-tech" id="tech-stack">
           <h2>My Tech Stack </h2>
           <div className="tech-container">
             <div className="tech-box">
@@ -104,7 +105,7 @@ function HomePage() {
           <h2 className="myprojects-title">My Projects</h2>
 
           <div className="my-projects-wrapper">
-          <div className="project-box">
+            <div className="project-box">
               <div className="image-container">
                 <img
                   src={worldbikeImage}
@@ -137,7 +138,10 @@ function HomePage() {
                 </div>
 
                 <p className="project-text">
-                  An app where you can search for bike networks and stations worldwide and see which ones are available. The main focus was handling API calls and fetching live data. Additionally, another main feature is that the app website is bilingual.
+                  An app where you can search for bike networks and stations
+                  worldwide and see which ones are available. The main focus was
+                  handling API calls and fetching live data. Additionally,
+                  another main feature is that the app website is bilingual.
                 </p>
               </div>
             </div>

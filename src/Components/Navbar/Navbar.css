@@ -214,6 +214,19 @@
   .nav-toggle-label span::after {
     top: 8px;
   }
+  .nav-toggle:checked ~ .nav-toggle-label span::after {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span::before {
+    transform: rotate(-45deg);
+    bottom: 0px;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span{
+    background: transparent;
+  }
 }
 
 /* for phones */
@@ -229,6 +242,7 @@
     height: 70px;
     width: 100%;
     position: fixed;
+    
   }
 
   .my-name {
@@ -290,6 +304,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    
   }
 
   .nav-toggle:checked ~ nav a:hover {
@@ -326,6 +341,7 @@
     width: 2em;
     border-radius: 2px;
     position: relative;
+    transition:  0.25s ease-in-out;
   }
 
   .nav-toggle-label span::before,
@@ -336,11 +352,29 @@
 
   .nav-toggle-label span::before {
     bottom: 8px;
+    
   }
 
   .nav-toggle-label span::after {
     top: 8px;
+    
   }
+
+  .nav-toggle:checked ~ .nav-toggle-label span::after {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span::before {
+    transform: rotate(-45deg);
+    bottom: 0px;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span{
+    background: transparent;
+  }
+
+ 
 }
 
 /* smaller phones and smaller devices */
@@ -356,6 +390,7 @@
     height: 70px;
     width: 100%;
     position: fixed;
+    
   }
 
   .my-name {
@@ -467,6 +502,20 @@
 
   .nav-toggle-label span::after {
     top: 8px;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span::after {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span::before {
+    transform: rotate(-45deg);
+    bottom: 0px;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span{
+    background: transparent;
   }
 }
 
@@ -545,6 +594,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    
   }
 
   .nav-toggle:checked ~ nav a:hover {
@@ -595,6 +645,20 @@
 
   .nav-toggle-label span::after {
     top: 8px;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span::after {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span::before {
+    transform: rotate(-45deg);
+    bottom: 0px;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span{
+    background: transparent;
   }
   
 }

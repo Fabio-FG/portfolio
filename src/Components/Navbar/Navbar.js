@@ -7,6 +7,10 @@ function Navbar() {
     window.scrollTo(0, 0);
   };
 
+
+
+
+
   return (
     <div className="container">
       {/* this should be a header */}

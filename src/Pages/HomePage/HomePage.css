@@ -33,6 +33,7 @@ body {
   border-radius: 0% 0% 55% 55%/0% 0% 15% 15%;
   position: relative;
   display: flex;
+  flex-direction: column;
   background-color: rgb(49, 150, 187);
 }
 
@@ -125,6 +126,19 @@ body {
   font-size: 0.5em;
   color: var(--secondary-text-color);
 }
+
+#arrow-down{
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  display: flex;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 5%;
+  top: -20px;
+}
+
 
 /* Section 2 */
 
