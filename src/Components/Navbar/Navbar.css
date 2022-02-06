@@ -87,6 +87,15 @@
   display: none;
 }
 
+.nav-toggle-label{
+  transition: 0.3s ease-in-out;
+}
+
+.nav-toggle-label:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 /* for tablets , ipad */
 @media screen and (max-width: 992px) {
   :root {
@@ -146,6 +155,8 @@
     opacity: 0;
   }
 
+  
+
   .nav-toggle:checked ~ nav {
     transform: scale(1, 1);
     transition: 0.5s;
@@ -199,6 +210,7 @@
     width: 2em;
     border-radius: 2px;
     position: relative;
+    transition: 0.3s ease-in-out;
   }
 
   .nav-toggle-label span::before,
