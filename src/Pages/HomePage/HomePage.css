@@ -886,7 +886,11 @@ hr {
     justify-content: center;
     top: -20px;
     filter: invert();
-    margin-top: 0%;
+    
+  }
+
+  #tech-stack{
+    scroll-padding-top: 100px;
   }
   
 
@@ -901,6 +905,7 @@ hr {
     text-align: center;
     margin-top: 18%;
     margin-bottom: 10%;
+    
   }
 
   .my-tech h2 {
@@ -908,6 +913,7 @@ hr {
     margin-bottom: 2%;
     font-size: 2.2em;
     color: var(--main-text-color);
+    scroll-margin-top: 100px;
   }
 
   #handlebars-logo {
