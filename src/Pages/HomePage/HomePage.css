@@ -127,16 +127,17 @@ body {
   color: var(--secondary-text-color);
 }
 
-#arrow-down{
-  color: white;
-  background-color: black;
+#arrow-down{ 
   text-decoration: none;
   display: flex;
   margin: auto;
   left: 0;
   right: 0;
   width: 5%;
+  justify-content: center;
   top: -20px;
+  filter: invert();
+  margin-top: 10%;
 }
 
 
@@ -432,7 +433,7 @@ hr {
   margin: 10px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px){
+@media only screen and (min-width: 992px) and (max-width: 992px){
   /* Global Variables */
   :root {
     --main-bg-color: rgb(255, 255, 255);
@@ -520,6 +521,8 @@ hr {
     font-size: 0.7em;
     color: var(--secondary-text-color);
   }
+
+  
 
   /* Section 2 */
 
@@ -1154,6 +1157,7 @@ hr {
     width: 100%;
   }
 
+
   .intro {
     /* header */
     width: 100%;
@@ -1215,6 +1219,7 @@ hr {
     color: var(--secondary-text-color);
   }
 
+  
   /* Section 2 */
 
   .my-tech {

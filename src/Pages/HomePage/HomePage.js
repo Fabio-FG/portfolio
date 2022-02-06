@@ -17,6 +17,7 @@ import handlebarsLogo from "../../images/handlebars.svg";
 import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton";
 import Footer from "../../Components/Footer/Footer";
 import github from "../../images/github.svg";
+import arrowDown from "../../images/arrowdown.svg"
 /* import AOS from 'aos'; */
 import "aos/dist/aos.css";
 
@@ -39,7 +40,7 @@ function HomePage() {
                 Jr. Fullstack Web Developer
                 <small className="alpha-code">PT</small>
               </h2>
-          <a href="#tech-stack" id="arrow-down">down</a>
+          <a href="#tech-stack" id="arrow-down"><img src={arrowDown} alt="arrow-down"/></a>
             </div>
 
             {/* <img src={bgImage} alt="bg-header" className="bg-image" /> */}
