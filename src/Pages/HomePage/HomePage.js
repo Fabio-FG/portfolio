@@ -46,8 +46,8 @@ function HomePage() {
             {/* <img src={bgImage} alt="bg-header" className="bg-image" /> */}
           </section>
         </div>
-        <section className="my-tech" id="tech-stack">
-          <h2>My Tech Stack </h2>
+        <section className="my-tech">
+          <h2 id="tech-stack">My Tech Stack </h2>
           <div className="tech-container">
             <div className="tech-box">
               <img src={htmlLogo} alt="html" className="language-logo" />
