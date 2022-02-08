@@ -85,16 +85,23 @@ body {
 }
 
 .intro h1::before {
+  -webkit-animation: typewriter 4s 1s steps(25) forwards;
+  -moz-animation: typewriter 4s 1s steps(25) forwards;
+  -o-animation: typewriter 4s 1s steps(25) forwards;
   animation: typewriter 4s 1s steps(25) forwards;
-  animation: name duration timing-function delay iteration-count direction
-    fill-mode;
+  /* animation: name duration timing-function delay iteration-count direction 
+    fill-mode;*/
   background-color: rgb(49, 150, 187);
+  
 }
 
 .intro h1::after {
   width: 0.1em;
   opacity: 0;
   background-color: #fff;
+  -webkit-animation: typewriter 4s 1s steps(25) forwards, blinker 800ms ease infinite;
+  -moz-animation:typewriter 4s 1s steps(25) forwards, blinker 800ms ease infinite;
+  -o-animation: typewriter 4s 1s steps(25) forwards, blinker 800ms ease infinite;
   animation: typewriter 4s 1s steps(25) forwards, blinker 800ms ease infinite;
 }
 
