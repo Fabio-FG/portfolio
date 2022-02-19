@@ -1,4 +1,4 @@
-<h1 style="text-align:center" >My Portfolio</h1>
+<h1 style="text-align:center;">My Portfolio</h1>
 
 
 <h2>Live Demo: <a href="https://fabioguerreiro.netlify.app/" target="_blank" alt="portfolio-link">Portfolio</a></h2>
