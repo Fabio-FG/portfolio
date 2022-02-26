@@ -52,8 +52,8 @@ function Navbar({ languages }) {
 
         <nav className="nav-container">
           <a href="#about-me">{t("About me")}</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact-me">Contacts</a>
+          <a href="#projects">{t("Projects")}</a>
+          <a href="#contact-me">{t("Contacts")}</a>
           {showPortuguese && (
             <img
               src={portugalFlag}
