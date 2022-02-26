@@ -3,12 +3,13 @@ import HomePage from "./Pages/HomePage/HomePage";
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollPageTop/ScrollPageTop";
 import portugalFlag from "./images/portugal-flag.svg";
-import unitedKingdomFlag from './images/unitedKingdom-flag.svg';
+import unitedKingdomFlag from "./images/unitedKingdom-flag.svg";
 import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
-
+import { useState } from "react";
+import AboutMeText from "./Components/AboutMeText/AboutMeText";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -43,15 +44,13 @@ i18n
     },
   });
 
-
-
 const languages = [
   {
     code: "pt",
     name: "Portuguese",
     codename: "PT",
     country_code: "pt",
-    country_flag: `${portugalFlag}`
+    country_flag: `${portugalFlag}`,
   },
 
   {
@@ -59,23 +58,23 @@ const languages = [
     name: "English",
     codename: "EN",
     country_code: "gb",
-    country_flag: `${unitedKingdomFlag}`
+    country_flag: `${unitedKingdomFlag}`,
   },
 ];
 
-
 function App() {
+
+  const [showAbout, setShowAbout ] = useState(false);
+
   return (
     <div className="App">
-    <ScrollToTop />
+      <ScrollToTop />
 
-      <Navbar languages={languages}/>
-
+      <Navbar languages={languages} />
+      {showAbout && <AboutMeText languages={languages}/> }
       <Routes>
-        <Route path="/" element={<HomePage/>} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
-     
-     
     </div>
   );
 }

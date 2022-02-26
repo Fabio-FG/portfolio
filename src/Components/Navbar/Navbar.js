@@ -14,7 +14,7 @@ function Navbar({ languages }) {
 
   const { t } = useTranslation();
 
-  console.log(languages);
+
 
   //display different flag if translation is active
   const [showEnglish, setShowEnglish] = useState(false);
