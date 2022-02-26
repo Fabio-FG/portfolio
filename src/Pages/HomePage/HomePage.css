@@ -70,7 +70,7 @@ body {
   color: var(--secondary-text-color);
   position: relative;
   white-space: nowrap;
-  width: 9.3em;
+  width: 9.9em;
   text-align: center;
   margin: auto;
 }
@@ -92,13 +92,13 @@ body {
   /* animation: name duration timing-function delay iteration-count direction 
     fill-mode;*/
   background-color: rgb(49, 150, 187);
-  
+  width: 100%;
 }
 
 .intro h1::after {
   width: 0.1em;
   opacity: 0;
-  background-color: #fff;
+  background-color: rgb(243, 243, 243);
   -webkit-animation: typewriter 4s 1s steps(25) forwards, blinker 800ms ease infinite;
   -moz-animation:typewriter 4s 1s steps(25) forwards, blinker 800ms ease infinite;
   -o-animation: typewriter 4s 1s steps(25) forwards, blinker 800ms ease infinite;

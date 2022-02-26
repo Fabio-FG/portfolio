@@ -2,7 +2,6 @@ import Navbar from "./Components/Navbar/Navbar";
 import HomePage from "./Pages/HomePage/HomePage";
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollPageTop/ScrollPageTop";
-import Translation from "./Services/Translation";
 import portugalFlag from "./images/portugal-flag.svg";
 import unitedKingdomFlag from './images/unitedKingdom-flag.svg';
 import { initReactI18next } from "react-i18next";

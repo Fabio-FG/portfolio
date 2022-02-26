@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import ukFlag from "../../images/unitedKingdom-flag.svg";
 import portugalFlag from "../../images/portugal-flag.svg";
 import { useState } from "react";
-import "../../Services/Translation";
 import i18next from "i18next";
 
 function Navbar({ languages }) {
