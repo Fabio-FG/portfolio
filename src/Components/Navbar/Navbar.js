@@ -36,7 +36,7 @@ function Navbar({ languages }) {
       {/* this should be a header */}
       <header className="header">
         <input type="checkbox" className="nav-toggle" id="nav-toggle" />
-        <label for="nav-toggle" className="nav-toggle-label">
+        <label htmlFor="nav-toggle" className="nav-toggle-label">
           {/* Hamburguer using span */}
           <span></span>
         </label>

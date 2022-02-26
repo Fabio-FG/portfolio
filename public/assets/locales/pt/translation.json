@@ -1,15 +1,17 @@
 {
   "About me": "Sobre Mim",
-  "Projects": "Projectos",
+  "Projects": "Projetos",
   "Contacts": "Contactos",
   "I am Fábio Guerreiro": "Sou o Fábio Guerreiro",
   "My Tech Stack": "O meu Tech Stack",
+  "About": "Sobre Mim",
   "I am a Web Developer based in Lisbon, Portugal. I first started to deal with the world of tech in 2014 when I did a multimedia course in Lisbon. Although I did not pursue a career in the big world of tech at the time I was always keeping an eye on it and after completing a bachelor's and a master's degree in Translation I decided to completely change my life around.": "Sou um Web Developer sediado em Lisboa, Portugal. Fui introduzido ao mundo da tecnologia em 2014 quando frequentei um curso de multimédia em Lisboa e apesar de não ter inicialmente continuado a minha carreira profissional no mundo da tecnologia, todo o percurso foi algo que ficou comigo. Após completar uma licenciatura e mestrado em Tradução decidi mudar de rumo por completo.",
 
   "In 2020 I started to play with HTML, CSS and JavaScript and I became addicted on how things worked and on how I could learn more. After that, in 2021, I completed a Full Stack Web Development course focused on the MERN stack and my goal for the future is to combine technology with beautiful designs and aesthetics.": "Em 2020 voltei a explorar HTML, CSS e JavaScript e fiquei fascinado em saber como tudo funciona e se relaciona, e em como poderia aprender mais. Assim, em 2021, para fomentar a minha curiosidade, ingressei num curso de Full Stack Web Development focado em MongoDB, Express, React e Node JS, que completei com sucesso! Enquanto desenvolvedor, meu objetivo é poder combinar tecnologia com designs estética e visualmente apelativos.",
   "My Hobbies" : "Os meus Hobbies",
   "Drawing Manga art, playing online games and binge-watch anime and series whenever I can.": "Desenhar mangá, jogar jogos online e fazer maratonas a ver anime ou séries sempre que posso.",
   "What's next for me":"O que quero aprender no futuro",
-  "I plan on learning and studying more about Algorithms and Data Structure. Learn SASS, React Native and C#.": "Pretendo aprender e estudar mais sobre Algoritmos e Estrutura de Dados. Aprender SASS, React Native e C#."
+  "I plan on learning and studying more about Algorithms and Data Structure. Learn SASS, React Native and C#.": "Pretendo aprender e estudar mais sobre Algoritmos e Estrutura de Dados. Aprender SASS, React Native e C#.",
+  "My Projects": "Os meus projetos"
 }
 

@@ -96,7 +96,7 @@ function HomePage() {
         </section>
         <span className="split"></span>
         <article className="about-me" id="about-me">
-          <h2>About me</h2>
+          <h2>{t("About")}</h2>
           <div className="about-me-wrapper">
             <div
               className="about-me-text"
@@ -110,7 +110,7 @@ function HomePage() {
         </article>
 
         <section className="my-projects" id="projects">
-          <h2 className="myprojects-title">My Projects</h2>
+          <h2 className="myprojects-title">{t("My Projects")}</h2>
 
           <div className="my-projects-wrapper">
             <div className="project-box">
