@@ -17,6 +17,7 @@ import handlebarsLogo from "../../images/handlebars.svg";
 import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton";
 import Footer from "../../Components/Footer/Footer";
 import github from "../../images/github.svg";
+import { useTranslation } from "react-i18next";
 
 /* import AOS from 'aos'; */
 import "aos/dist/aos.css";
@@ -27,6 +28,9 @@ function HomePage() {
     window.scrollTo(0, 0);
   });
 
+  //translation hook
+  const { t } = useTranslation();
+
  
 
   return (
@@ -36,7 +40,7 @@ function HomePage() {
           <section className="intro">
             <img src={myPic} alt="my-intro-pic" className="my-pic"></img>
             <div className="intro-text">
-              <h1>I am Fábio Guerreiro</h1>
+              <h1>{t("I am Fábio Guerreiro")}</h1>
 
               <h2>
                 Jr. Fullstack Web Developer
@@ -50,7 +54,7 @@ function HomePage() {
           </section>
         </div>
         <section className="my-tech">
-          <h2 id="tech-stack">My Tech Stack </h2>
+          <h2 id="tech-stack">{t("My Tech Stack")}</h2>
           <div className="tech-container">
             <div className="tech-box">
               <img src={htmlLogo} alt="html" className="language-logo" />
