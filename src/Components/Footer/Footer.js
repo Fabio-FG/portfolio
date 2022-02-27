@@ -2,11 +2,15 @@ import githubLogo from "../../images/github.svg";
 import linkedinLogo from "../../images/linkedin.svg";
 import gmailLogo from "../../images/gmail.svg";
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+
+  const { t } = useTranslation();
+
   return (
     <footer>
-      <h2>Get in touch with me!</h2>
+      <h2>{t("Get in touch with me!")}</h2>
       <div className="footer-container" id="contact-me">
         <div className="footer-contacts">
           <a

@@ -146,10 +146,7 @@ function HomePage() {
                 </div>
 
                 <p className="project-text">
-                  An app where you can search for bike networks and stations
-                  worldwide and see which ones are available. The main focus was
-                  handling API calls and fetching live data. Additionally,
-                  another main feature is that the app website is bilingual.
+                  {t("An app where you can search for bike networks and stations worldwide and see which ones are available. The main focus was handling API calls and fetching live data. Additionally, another main feature is that the app website is bilingual.")}
                 </p>
               </div>
             </div>
@@ -188,9 +185,7 @@ function HomePage() {
                 </div>
 
                 <p className="project-text">
-                  An app where you can list your game in a database built with
-                  MongoDB, NodeJS, Express and Handlebars. The focus was in
-                  implementing CRUD.
+                  {t("An app where you can list your game in a database built with MongoDB, NodeJS, Express and Handlebars. The focus was in implementing CRUD.")}
                 </p>
               </div>
             </div>
@@ -228,9 +223,7 @@ function HomePage() {
                 </div>
 
                 <p className="project-text">
-                  This is a full stack app where you can customise streaming
-                  services and handpick your favourite channels and streams. It
-                  was built with React, MongoDB, NodeJS and Express.
+                  {t("This is a full stack app where you can customise streaming services and handpick your favourite channels and streams. It was built with React, MongoDB, NodeJS and Express.")}
                 </p>
               </div>
             </div>
@@ -269,9 +262,7 @@ function HomePage() {
                 </div>
 
                 <p className="project-text">
-                  This is a game built with Canvas, CSS and JavaScript. The main
-                  focus was the usage of JavaScript classes and methods with
-                  basic OOP knowledge.
+                  {t("This is a game built with Canvas, CSS and JavaScript. The main focus was the usage of JavaScript classes and methods with basic OOP knowledge.")}
                 </p>
               </div>
             </div>

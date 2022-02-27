@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import ukFlag from "../../images/unitedKingdom-flag.svg";
+import ukFlag from "../../images/uk.png";
 import portugalFlag from "../../images/portugal-flag.svg";
 import { useState } from "react";
 import i18next from "i18next";

@@ -92,7 +92,7 @@ body {
   /* animation: name duration timing-function delay iteration-count direction 
     fill-mode;*/
   background-color: rgb(49, 150, 187);
-  width: 100%;
+ 
 }
 
 .intro h1::after {
