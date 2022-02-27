@@ -1,9 +1,7 @@
 import './AboutMeText.css';
 import myCV from '../../cv/FABIOGUERREIRO_webdevCVEN.pdf'
 import { useTranslation } from 'react-i18next';
-import i18next from "i18next";
-import { useState } from 'react';
-import { useEffect } from 'react';
+
 
 function AboutMeText({languages}) {
   //translation hook
