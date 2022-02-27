@@ -8,8 +8,7 @@ import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
-import { useState } from "react";
-import AboutMeText from "./Components/AboutMeText/AboutMeText";
+
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -64,14 +63,14 @@ const languages = [
 
 function App() {
 
-  const [showAbout, setShowAbout ] = useState(false);
+ 
 
   return (
     <div className="App">
       <ScrollToTop />
 
       <Navbar languages={languages} />
-      {showAbout && <AboutMeText languages={languages}/> }
+      
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
