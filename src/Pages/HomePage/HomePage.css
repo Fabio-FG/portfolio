@@ -188,6 +188,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  
 }
 
 .my-tech h2 {
@@ -200,6 +201,7 @@ body {
 #handlebars-logo {
   filter: invert(30%);
 }
+
 .tech-container {
   display: flex;
   flex-direction: row;
@@ -219,6 +221,7 @@ body {
   width: 50px;
   height: 50px;
   transition: 0.4s;
+  object-fit: fill;
 }
 
 .language-logo:hover {
