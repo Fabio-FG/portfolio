@@ -9,7 +9,8 @@ import javascriptLogo from "../../images/javascriptlogo.svg";
 import nodeLogo from "../../images/nodejs.svg";
 import reactLogo from "../../images/reactlogo1.svg";
 import mongoLogo from "../../images/mongodb.svg";
-import typescriptLogo from "../../images/Typescript.svg"
+import typescriptLogo from "../../images/Typescript.svg";
+import firebaseLogo from "../../images/firebase.svg";
 import spacerunnerImage from "../../images/spacerunnersite.png";
 import thegamelistImage from "../../images/thegamelistsite.png";
 import worldbikeImage from "../../images/worldbike.png";
@@ -95,6 +96,9 @@ function HomePage() {
             </div>
             <div className="tech-box">
               <img src={typescriptLogo} alt="typescript" className="language-logo"/>
+            </div>
+            <div className="tech-box">
+              <img src={firebaseLogo} alt="firebase" className="language-logo"/>
             </div>
           </div>
         </section>
