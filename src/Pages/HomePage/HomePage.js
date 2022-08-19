@@ -1,28 +1,21 @@
-import "./HomePage.css";
-import "../../Components/Navbar/Navbar.css";
 import { useLayoutEffect } from "react";
 import AboutMeText from "../../Components/AboutMeText/AboutMeText";
+import "../../Components/Navbar/Navbar.css";
 import myPic from "../../images/fab.jpg";
-import htmlLogo from "../../images/htmllogo.svg";
-import cssLogo from "../../images/css3.svg";
-import javascriptLogo from "../../images/javascriptlogo.svg";
-import nodeLogo from "../../images/nodejs.svg";
-import reactLogo from "../../images/reactlogo1.svg";
-import mongoLogo from "../../images/mongodb.svg";
-import typescriptLogo from "../../images/Typescript.svg";
-import firebaseLogo from "../../images/firebase.svg";
+import "./HomePage.css";
+import hybridboxImage from "../../images/hybridboxsite.png";
 import spacerunnerImage from "../../images/spacerunnersite.png";
 import thegamelistImage from "../../images/thegamelistsite.png";
 import worldbikeImage from "../../images/worldbike.png";
-import hybridboxImage from "../../images/hybridboxsite.png";
-import handlebarsLogo from "../../images/handlebars.svg";
-import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton";
-import Footer from "../../Components/Footer/Footer";
-import github from "../../images/github.svg";
 import { useTranslation } from "react-i18next";
+import Footer from "../../Components/Footer/Footer";
+import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton";
+import github from "../../images/github.svg";
 
 /* import AOS from 'aos'; */
 import "aos/dist/aos.css";
+
+import { logos } from "../../Models/stackLogos/stackLogos";
 
 function HomePage() {
   //hook to restart the page on the top.
@@ -33,7 +26,18 @@ function HomePage() {
   //translation hook
   const { t } = useTranslation();
 
- 
+  const renderLogos = logos.map((logo) => {
+    return (
+      <div className="tech-box">
+        <img
+          key={logo}
+          src={logo}
+          alt="language-logo"
+          className="language-logo"
+        />
+      </div>
+    );
+  });
 
   return (
     <div>
@@ -48,8 +52,6 @@ function HomePage() {
                 Jr. Fullstack Web Developer
                 <small className="alpha-code">PT</small>
               </h2>
-        
-         
             </div>
 
             {/* <img src={bgImage} alt="bg-header" className="bg-image" /> */}
@@ -57,49 +59,9 @@ function HomePage() {
         </div>
         <section className="my-tech">
           <h2 id="tech-stack">{t("My Tech Stack")}</h2>
+
           <div className="tech-container">
-            <div className="tech-box">
-              <img src={htmlLogo} alt="html" className="language-logo" />
-            </div>
-
-            <div className="tech-box">
-              <img src={cssLogo} alt="css" className="language-logo" />
-            </div>
-
-            <div className="tech-box">
-              <img
-                src={javascriptLogo}
-                alt="javascript"
-                className="language-logo"
-              />
-            </div>
-
-            <div className="tech-box">
-              <img src={reactLogo} alt="reactJS" className="language-logo" />
-            </div>
-
-            <div className="tech-box">
-              <img src={nodeLogo} alt="nodeJS" className="language-logo" />
-            </div>
-
-            <div className="tech-box">
-              <img src={mongoLogo} alt="mongoDB" className="language-logo" />
-            </div>
-
-            <div className="tech-box">
-              <img
-                src={handlebarsLogo}
-                alt="handlebars"
-                className="language-logo"
-                id="handlebars-logo"
-              />
-            </div>
-            <div className="tech-box">
-              <img src={typescriptLogo} alt="typescript" className="language-logo"/>
-            </div>
-            <div className="tech-box">
-              <img src={firebaseLogo} alt="firebase" className="language-logo"/>
-            </div>
+            {renderLogos}
           </div>
         </section>
         <span className="split"></span>
@@ -154,7 +116,9 @@ function HomePage() {
                 </div>
 
                 <p className="project-text">
-                  {t("An app where you can search for bike networks and stations worldwide and see which ones are available. The main focus was handling API calls and fetching live data. Additionally, another main feature is that the app website is bilingual.")}
+                  {t(
+                    "An app where you can search for bike networks and stations worldwide and see which ones are available. The main focus was handling API calls and fetching live data. Additionally, another main feature is that the app website is bilingual."
+                  )}
                 </p>
               </div>
             </div>
@@ -193,7 +157,9 @@ function HomePage() {
                 </div>
 
                 <p className="project-text">
-                  {t("An app where you can list your game in a database built with MongoDB, NodeJS, Express and Handlebars. The focus was in implementing CRUD.")}
+                  {t(
+                    "An app where you can list your game in a database built with MongoDB, NodeJS, Express and Handlebars. The focus was in implementing CRUD."
+                  )}
                 </p>
               </div>
             </div>
@@ -231,7 +197,9 @@ function HomePage() {
                 </div>
 
                 <p className="project-text">
-                  {t("This is a full stack app where you can customise streaming services and handpick your favourite channels and streams. It was built with React, MongoDB, NodeJS and Express.")}
+                  {t(
+                    "This is a full stack app where you can customise streaming services and handpick your favourite channels and streams. It was built with React, MongoDB, NodeJS and Express."
+                  )}
                 </p>
               </div>
             </div>
@@ -270,7 +238,9 @@ function HomePage() {
                 </div>
 
                 <p className="project-text">
-                  {t("This is a game built with Canvas, CSS and JavaScript. The main focus was the usage of JavaScript classes and methods with basic OOP knowledge.")}
+                  {t(
+                    "This is a game built with Canvas, CSS and JavaScript. The main focus was the usage of JavaScript classes and methods with basic OOP knowledge."
+                  )}
                 </p>
               </div>
             </div>

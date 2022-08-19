@@ -229,6 +229,7 @@ body {
   transform: scale(1.1);
   transition: 0.4s;
 }
+
 hr {
   width: 15%;
   margin: auto;
@@ -239,7 +240,7 @@ hr {
   display: flex;
   width: 60%;
   background-color: rgb(59, 58, 139);
-  height: 2px;
+  height: 3px;
   margin: auto;
   border-bottom: 2px solid white;
   margin-top: 5%;
