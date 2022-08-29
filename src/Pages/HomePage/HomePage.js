@@ -30,11 +30,12 @@ function HomePage() {
     return (
       <div className="tech-box">
         <img
-          key={logo}
-          src={logo}
+          key={logo.title}
+          src={logo.image}
           alt="language-logo"
           className="language-logo"
         />
+        <p className="languageName">{logo.title}</p>
       </div>
     );
   });

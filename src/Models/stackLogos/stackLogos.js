@@ -9,15 +9,13 @@ import firebaseLogo from "../../images/firebase.svg";
 import handlebarsLogo from "../../images/handlebars.svg";
 
 export const logos = [
-  htmlLogo,
-  cssLogo,
-  javascriptLogo,
-  nodeLogo,
-  reactLogo,
-  mongoLogo,
-  handlebarsLogo,
-  typescriptLogo,
-  firebaseLogo,
+  { title: "html", image: htmlLogo },
+  { title: "css", image: cssLogo },
+  { title: "javaScript", image: javascriptLogo },
+  { title: "nodeJS", image: nodeLogo },
+  { title: "react", image: reactLogo },
+  { title: "mongoDB", image: mongoLogo },
+  { title: "handlebars", image: handlebarsLogo },
+  { title: "typescript", image: typescriptLogo },
+  { title: "firebase", image: firebaseLogo },
 ];
-
-
